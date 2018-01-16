@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="generator" content="Responsive Site Designer 1.5.1394">
+  <title>Index</title>
+  <link rel="stylesheet" href="css/coffeegrinder.min.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <script>document.createElement( "picture" );</script>
+  <script src="js/picturefill.min.js" class="picturefill" async="async"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo%7CKhand%7CRoboto:300,400,b">
+</head>
+
+<body>
+  <div class="row cover-row">
+    <div class="coffee-span-12"></div>
+  </div>
+  <div class="row article-header">
+    <div class="coffee-span-12 coffee-768-span-12 coffee-768-offset-0 header-column coffee-offset-0">
+      <h1 class="welcome-intro-title">The CoffeeCup Guide to</h1>
+      <h1 class="welcome-title">Designing with Flexbox</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-2 coffee-768-span-3 coffee-768-offset-0 coffee-460-span-12">
+      <div class="container credential-container">
+        <p class="paragraph credentials title">Author</p>
+        <p class="paragraph credentials"><span class="bold">Bob V.<br></span>CoffeeCup Chief</p>
+      </div>
+      <div class="container credential-container">
+        <p class="paragraph credentials title">Design</p>
+        <p class="paragraph credentials"><span class="bold">Diego N.<br></span>CoffeeCup Designer</p>
+      </div>
+      <div class="container credential-container">
+        <p class="paragraph credentials title">Production rights</p>
+        <p class="paragraph credentials"><span class="bold">© CoffeeCup Software<br></span><a title="" href="http://www.coffeecup.com/" class="p-link">www.coffeecup.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="coffee-span-5 coffee-offset-0 coffee-768-span-9 coffee-460-span-12">
+      <p class="paragraph paragraph-4"><span class="highlight">Flexbox</span> is a CSS3 module for managing the distribution of space, and the positioning of elements, across the wide variety of screen sizes.</p>
+      <p class="paragraph paragraph-2">Many layout designs that were difficult or impractical to create with CSS ‘sans-flexbox’, are are now easy to achieve. Vertically aligning or evenly spacing out elements are good examples.</p>
+      <p class="paragraph">And for responsive designs, the possibilities are even cooler. Changing the ordering of elements for smaller (or larger) screens, for example, is simply a matter of changing the values, e.g. from <span class="code">&nbsp;1 </span>&nbsp;to <span class="code">&nbsp;4 </span>, for the new <span class="control">order</span> property! In short, flexbox allows us to easily manipulate the layout of an entire series of elements.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">Flexbox is mostly appropriate for components, or subsets, of websites and web applications. Not necessarily for the overall grid or layout.</p>
+      <h6 class="outstanding">For responsive designs, the flexbox possibilities are even cooler.</h6>
+      <p class="paragraph">In this guide we will go over the flexbox syntax and look at the visual effects that can be created with them. Also included are several practical examples and showcases of layout configurations made with flexbox. Let’s dive into this box of layout freedom!</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-10 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <h4>New found layout possibilities</h4>
+    </div>
+    <div class="coffee-span-5 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">We touched upon a couple of the possibilities flexbox has to offer in the introduction above. The relatively easy to understand syntax provides a tremendous amount of layout control. There are a number of online resources available that discuss the different flexbox properties and their values. However, there are very few practical demonstrations that <span class="bold">showcase real design examples</span>. And as we all know, making something for production can differ significantly from showing something in an isolated setting. When using the flexbox syntax in isolation, potential conflicts with other properties are left out of the picture. An example would be using flexbox centering, together with specific margin settings for elements — in that case flexbox might seem to not exactly work as expected.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">So let's get warmed up for this cool (and finally widely supported CSS3 module), and kick-off with a real life design example.&nbsp;In the design below most of the layout configuration is handled by flexbox. The logo and navigation container are nicely spaced out in the header without using complicated floats, inline-blocks or endless margin tweaks. The same is true for the navigation links. With flexbox, it takes just a few clicks to make them display this way.</p>
+      <p class="paragraph">The action items (newsletter subscribe request) are placed exactly in the middle of the area below the header. Both horizontally and vertically, something that would impose a serious challenge without the help of flexbox.</p>
+    </div>
+  </div>
+  <div class="row hero-section">
+    <div class="coffee-span-12">
+      <div class="subgrid">
+        <div class="row header-sub-row">
+          <div class="coffee-span-12 header-sub-column">
+            <div class="responsive-picture sample-nav-logo">
+              <picture><img alt="north-logo" srcset="./images/north-logo.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+              </picture>
+            </div>
+            <div class="container container-2">
+              <a class="link-text nav-link" href="#">About</a>
+              <a class="link-text nav-link active" href="#">Store</a>
+              <a class="link-text nav-link" href="#">Contact</a>
+              <a class="link-text nav-link" href="#">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="coffee-span-12 hero-flex-column">
+      <div class="container hero-flex-container">
+        <p class="paragraph action-prompt">Catch the vibe. Subscribe to our newsletter.</p>
+        <div class="subgrid">
+          <div class="row">
+            <div class="coffee-span-12 subscribe-flex-container"><span class="glyph font-icon-3"><i class="coffeecup-icons-circle-right4"></i></span>
+              <span class="text-element input">Your email please…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">The cool thing is that if you're viewing this example in Responsive Site Designer, you can easily play with the flex property values and see how the elements behave. Go ahead, click on the picture above to select the flex parent container. Then, on the design pane, scroll down to the position section. The flex controls are located right below the display drop down.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">You’ll see that changing the flex-direction is pretty intuitive. Depending on the value, the elements are stacked as a column or displayed inline as a row. Changing the justify-content drop down influence the position of the elements in that column or row. Now don’t go too wild immediately! Using flexbox is way more fun with a slightly better understanding of the mechanics.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-10 coffee-offset-2 coffee-768-span-12 coffee-768-offset-0 info-message-column">
+      <p class="paragraph info-message"><span class="highlight">Please note</span> that the example above would have been even simpler if Internet Explorer 11 would be taken out of the picture. Although it is a major improvement over IE 8, 9 &amp; 10 (for which <a title="" href="https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support" class="p-link">Microsoft stopped support in January 2016</a>) and offers good overall Flexbox support, it does suffer from a few Flexbugs. One of them relates to the use in <span class="control">min-height</span>. In order for flex elements to position themeselves, they need to know about the dimensions of the parent. Whenever a minimum height is used, the flex elements seem to get confused and act as if no height has been set at all. Luckily there are workarounds.<br><br>In the example above we use double nesting, placing a container in a columns, to fix issues. The subscribe input field and button are then placed in a grid container to position them with <span class="code">&nbsp;flex </span>. The wonderous Philip Walton did a great job <a title="" href="https://github.com/philipwalton/flexbugs">documenting Flexbugs and workarounds</a>. Some of them will pop up below. <span class="bold">Ready for the good news?</span> The next version of Internet Explorer (which Microsoft labelled 'Edge’) solves about all of them! Yep, the future of Flexbox looks bright indeed.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-10 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <h4>When to use flexbox<br>
+      </h4>
+    </div>
+    <div class="coffee-span-2 coffee-768-span-3 coffee-460-span-10 coffee-460-offset-1">
+      <p class="paragraph side-note">Want to play with flexbox? <a title="" href="http://www.coffeecup.com/designer/#rsd-header" class="p-link">Download a trial version here.</a>
+      </p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-460-span-12 coffee-460-offset-0 coffee-offset-0 coffee-768-offset-0">
+      <p class="paragraph">As mentioned in the introduction, the current best practice is to use flexbox for subsets of the layout, not for constructing a complex, grid-based full page layout. One of the main reasons is that for large pages and/or slow connections, <a title="" href="https://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/" class="p-link">the layout can shift</a> around during page loading.</p>
+      <p class="paragraph">It is also not clear from the <a title="" href="http://www.w3.org/TR/css3-flexbox/" class="p-link">official specification</a> if flexbox was indeed intended for that type of usage.&nbsp;In fact, considering that the <a title="" href="http://www.w3.org/TR/css-grid-1/" class="p-link">CSS Grid Layout</a> workgroup includes several of the same Editors, it seems more likely that the flexbox layout module was designed to address specific layout problems within parts of the overall layout, rather than to create a layout module for page or grid construction.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">Don’t take me wrong, flexbox is one of the most versatile and intuitive layout systems. However, it performs best when set to a specific purpose like, for example, aligning a series of items within a container. It’s also great for changing the layout direction or even the visual order of elements over different screen widths.<br>
+      </p>
+      <h6 class="outstanding">Flexbox is one of the most versatile and intuitive layout systems.</h6>
+      <p class="paragraph">Time to set up the initial flex layout, following which we can get to work on some fun demos and use cases!<br>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-10 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <h4>Setting up the flex layout<br>
+      </h4>
+    </div>
+    <div class="coffee-span-5 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">A flex layout is created by setting the display property of a container element to flex. This can be any element that contains other elements, from a simple column or container, to a subgrid or list element. The container can be any type of HTML container, a simple <span class="control">&lt;div&gt;</span> or a more semantically labelled element such as a &nbsp;<span class="control">&lt;section&gt;</span>&nbsp;or <span class="control">&lt;nav&gt;</span>. When the flex display value is used, the parent container becomes a flex-container, and all immediate children become flex-items.</p>
+      <h6 class="outstanding">Responsive design is a requirement and height changes are very common.</h6>
+      <p class="paragraph">The main characteristic of the flex container is the ability to modify the order, position, alignment, width or height of its children. This allows the designer to use the available space in the best possible way.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">As we saw in the example above, even symmetrical perfection can be achieved. True, before flexbox we were able to use margin or padding to vertically center elements within a section. Or at least approach it for a static layout. But keeping multiple elements aligned is a big endeavour, especially if they are not the exact same size.&nbsp;</p>
+      <p class="paragraph">In addition, we’re living in a multi-device world where responsive design is a requirement and height changes are very common — due to, for example, wrapping text. As soon as that happens we would be entering the trouble zone, chasing height using breakpoints without a real solution to the problem.</p>
+      <p class="paragraph">In short, cleverly positioning elements within a container is both more powerful and less complicated with flexbox. There are five properties for the flex-container that can be used to influence the way the flex-items are laid out.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-10 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <h4>Manipulating the flex layout<br>
+      </h4>
+    </div>
+    <div class="coffee-span-5 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">The <span class="control">flex-direction</span> property is used to define the direction the&nbsp;flex-items follow in the flex container.&nbsp;The initial function is to tell the flex-items to position as (horizontal) rows or (vertical) columns.</p>
+      <p class="paragraph">In addition they can be instructed to change their natural order and reverse their position from right-to-left or bottom-to-top.<br>
+      </p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <h6>flex-direction<br>
+      </h6>
+      <p class="paragraph">The design example below illustrates the directional behavior. I dropped three containers in the (single column) of a full-width row. The normal behavior of these block elements would be to stack vertically, but choosing <span class="control">display</span>&nbsp;<span class="code"> flex </span>&nbsp; for the column and setting the <span class="control">flex-direction</span> to <span class="code">&nbsp;row </span>&nbsp; places them nicely next to each other.</p>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12 three-elements-column coffee-offset-0">
+      <div class="container three-elements-item">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-1.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-1</h6>
+        <p class="paragraph three-elements-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum.</p>
+      </div>
+      <div class="container three-elements-item">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-2</h6>
+        <p class="paragraph three-elements-paragraph">Quisque eleifend gravida libero, vitae ultricies augue blandit vel. Mauris dictum purus in dictum ultrices. Integer id odio ac erat sagittis mattis non at nunc.</p>
+      </div>
+      <div class="container three-elements-item">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-3.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-3</h6>
+        <p class="paragraph three-elements-paragraph">Phasellus consequat, sapien id varius fermentum, justo erat ultricies ante, sed aliquet justo quam eget mi.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">Using a <span class="control">width</span> of <span class="code">&nbsp;100% </span>&nbsp;these containers would try to take up all the space they can get. However, flexbox tells them to split the available space in 3 (or in whatever number of elements would be placed there) so they fit next to each other.&nbsp;</p>
+      <p class="paragraph">Want to display the items in a different order? That’s no problem when using flexbox. Simply set the flex-direction to <span class="code">&nbsp;reversed-row&nbsp;</span>&nbsp;and you’ll get the result you see below.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">The white containers are not only flex-items, they are flex-containers too because they also use the flex display property for arranging the elements inside.&nbsp;For these three flex-containers we are using a different <span class="control"><span class="control">flex-<span class="paragraph-text-2">direction</span></span>:</span> <span class="code">&nbsp;column </span>. The <span class="control">justify-content</span> property is used to center the items within the container.</p>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12 three-elements-column coffee-offset-0 reversed">
+      <div class="container three-elements-item">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-1.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-1</h6>
+        <p class="paragraph three-elements-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum.</p>
+      </div>
+      <div class="container three-elements-item">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-2</h6>
+        <p class="paragraph three-elements-paragraph">Quisque eleifend gravida libero, vitae ultricies augue blandit vel. Mauris dictum purus in dictum ultrices. Integer id odio ac erat sagittis mattis non at nunc.</p>
+      </div>
+      <div class="container three-elements-item">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-3.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-3</h6>
+        <p class="paragraph three-elements-paragraph">Phasellus consequat, sapien id varius fermentum, justo erat ultricies ante, sed aliquet justo quam eget mi.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-10 coffee-offset-2 coffee-768-span-12 coffee-768-offset-0 info-message-column">
+      <p class="paragraph info-message"><span class="highlight">Please note</span> that that the paragraphs are not displayed below the 460px breakpoint.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">The elements inside the container get some extra styles. The paragraph text for example is centered and gets room on the sides from a <span class="code">&nbsp;10% </span>&nbsp;margin.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">I also added a max-width. In theory this would not be needed since the margin takes care of it all… Unfortunately,&nbsp; there’s a <a title="" href="http://caniuse.com/#feat=flexbox">bug in IE where paragraph text in a flex-container does not wrap</a>.&nbsp;The max-width is used to battle the issue.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0 coffee-offset-2">
+      <h6>A real flexbox design case</h6>
+      <p class="paragraph">The project design went really smooth up until now. And that’s exactly how it is for demos that explain how flexbox works in isolated settings using stable, single-size, placeholders. But we’re dealing with a real design case here. The design has to look good, we’re using real elements, combinations of elements, and the paragraphs have different text lengths. And that’s how we find how flexbox really works!</p>
+      <p class="paragraph">Let’s look a bit deeper into the width settings for the container elements. Giving them a width of 100% and using the flexbox settings as explained above, gives each of them an equal amount of the available space. But if we change the width to <span class="code">&nbsp;auto </span>, the width of each container varies. Without content inside they are all small, only as wide as defined by a default minimum width setting. With the exact same content, they all get the exact same width.&nbsp;</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">Things get interesting when different content like, for example, different paragraph lengths, is used in the same type of container.&nbsp;Using <span class="code">&nbsp;auto </span>&nbsp;values for the width and flex-basis (we’ll get back to this property later), the flex-item is <a title="" href="http://www.w3.org/TR/css3-flexbox/#flex-basis-property" class="p-link">automatically sized based on the its content</a>.&nbsp;In our example, the only difference is the text length of the three paragraphs. This causes the containers with more text to be wider than the containers with less text. <span class="highlight">Please note</span> that in order to demonstrate this the max-width had to be removed from the paragraph. That also means that <span class="highlight">if you’re reading this in IE, the bug I referenced above will pop up</span> causing the text to overlap.</p>
+      <p class="paragraph">Now, is this behaviour desirable? Looking at the example below, this can definitely be neat. However, with the different container sizes the images will resize differently at smaller widths. And although the containers maintain the same height when that happens, the horizontal alignment of the content is not maintained, a likely undesirable consequence for most design cases.&nbsp;</p>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12 three-elements-column coffee-offset-0">
+      <div class="container three-elements-item auto-width">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-1.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-1</h6>
+        <p class="paragraph three-elements-paragraph no-max-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum.</p>
+      </div>
+      <div class="container three-elements-item auto-width">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-2</h6>
+        <p class="paragraph three-elements-paragraph no-max-width">Quisque eleifend gravida libero, vitae ultricies augue blandit vel. Mauris dictum purus in dictum ultrices. Integer id odio ac erat sagittis mattis non at nunc.</p>
+      </div>
+      <div class="container three-elements-item auto-width">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-3.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-3</h6>
+        <p class="paragraph three-elements-paragraph no-max-width">Phasellus consequat, sapien id varius fermentum, justo erat ultricies ante, sed aliquet justo quam eget mi.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0 coffee-offset-2">
+      <p class="paragraph">The above already illustrates the powerful layout design possibilities flexbox offers. Independent of size container or element size, flex-items can be placed on a single line. This default behavior, always fitting <span class="emphasize">all</span> items onto one line can be influenced as well. That’s where the&nbsp;<span class="control">flex-wrap</span>&nbsp;property comes into play.</p>
+      <h6>flex-wrap</h6>
+      <p class="paragraph">The flex-wrap property can be used to position a series of items on a single, or on multiple lines. If there is not enough space available for the <span class="highlight">natural size</span> of the elements, setting this property to <span class="code">&nbsp;wrap </span>&nbsp;will place items that do not fit on the next line.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">The flex-container (column) below contains two blockquote elements. Yep, they are nicely vertically aligned, but that is something we will talk about related to other flex properties. The point here is that when using &nbsp;<span class="code">&nbsp;wrap </span>&nbsp;(with <span class="code">&nbsp;no-wrap </span>&nbsp;being the default) as value for the <span class="control">flex-wrap</span> property, these quotes will stack instead of shrink when there’s not enough room in the container to display them next to each other.&nbsp;</p>
+      <p class="paragraph">If you’re following along within Responsive Site Designer this is easy to test: select one of quotes and on the design pane, increase the <span class="control">max-width</span> to <span class="code">&nbsp;600px </span>. With the row never being wider than 1200px this will make them stack.</p>
+    </div>
+  </div>
+  <div class="row sample-vertical-align">
+    <div class="coffee-span-12 quotes-column">
+      <blockquote class="vertical-align-quotes">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer erat a ante."</blockquote>
+      <blockquote class="vertical-align-quotes">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante Lorem ipsum dolor sit amet, consectetur posuere erat a ante."</blockquote>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0 coffee-offset-2">
+      <p class="paragraph">Using the width slider and decreasing the viewport width below to about 880px will have the same effect. If you’re reading this in a browser you can squish the windows to make them stack.</p>
+      <h6>Natural sizes come in many forms</h6>
+      <p class="paragraph">Both the width of an element and the available space are influenced by many parameters. Widths, heights, max-widths, paddings, and margins, they all play a role. As does the content itself.&nbsp;</p>
+      <p class="paragraph">If the width is defined in pixels, all is clear. However, in a responsive design widths are mostly relative, often with a width defined beyond which the element should not grow anymore. One would expect the browser to use the max-width value as the&nbsp;‘maximum natural size’ and most of them do. This time it is Safari, or more precisely the WebKit rendering engine, that presents us with some unexpected behavior.&nbsp;</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">Whenever a width has been defined for a flex-item, WebKit uses it for calculating the remaining available space, <span class="highlight">ignoring any maximum width</span> that may have been applied. An element with a 100% width and max-width of 400px will never be wider than the specified 400px pixel size. Still WebKit will take the 100%, inadvertently concluding that no space is available and stack the elements.</p>
+      <p class="paragraph">The work around? Not specifying a width! Using&nbsp;<span class="control">width:</span><span class="code"> auto </span>&nbsp;will do wonders. And if automatic resizing based on the content is not desirable, the max-width property can be used to restrain the content. Something that is needed on paragraphs to make IE behave anyway. Using the flex-basis property could be another option for preventing the resizing, we’ll look into that later. Now let’s see what options we have to distribute the flex-items over the horizontal or vertical space.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0 coffee-offset-2">
+      <h6>justify-content</h6>
+      <p class="paragraph">This property can be used to distribute the flex-items over the space defined in the <span class="control">flex-direction</span>. If the flex-direction is set to <span class="code">&nbsp;row </span>, the <span class="control">justify-content</span> control determines how the elements are spaced out horizontally.</p>
+      <p class="paragraph">Similarly, when the flex-direction is used to create columns, this property&nbsp;determines how the elements are spaced out horizontally.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">Let’s add some fresh images and see how the different values &nbsp; influence the positioning of the three containers. To better illustrate this (and save some room) I constrained their width to 180px. The elements, picture and header, were made smalle. The paragraph has been removed.</p>
+      <p class="paragraph">The default value for the justify-content property is <span class="code">&nbsp;flex-start </span>. The first example shows this, the items are <span class="highlight">stacked towards the side where the flex-direction starts</span>. As is seen on the second example, when the flex-direction changes, so will the position where the items start.</p>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12">
+      <h6 class="caption">Row: Flex-start</h6>
+    </div>
+    <div class="coffee-span-12 three-elements-column coffee-offset-0 flex-start">
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-4.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-1</h6>
+      </div>
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-5.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-2</h6>
+      </div>
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-6.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-3</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12">
+      <h6 class="caption">Reversed-row: Flex-start</h6>
+    </div>
+    <div class="coffee-span-12 three-elements-column coffee-offset-0 flex-start reversed-row">
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-6.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-1</h6>
+      </div>
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-5.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-2</h6>
+      </div>
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-4.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-3</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-10 coffee-offset-2 coffee-768-span-12 coffee-768-offset-0 info-message-column">
+      <p class="paragraph info-message"><span class="highlight">Please note</span> that this example can not be illustrated on smaller screens, there’s not enough space remaining. Also, since this (and some other) examples need to illustrate specific flexbox settings, I am not updating them to improve the design for smaller screens. Something that clearly can and should be done when the design is not explanatory.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0 coffee-offset-2">
+      <p class="paragraph">The opposite of the default value is&nbsp;<span class="code">&nbsp;flex-end&nbsp;</span>&nbsp;You can easily imagine how that will work, or change the value for the design example above.</p>
+      <p class="paragraph">There are three other values for this property. &nbsp;The <span class="code">&nbsp;center </span>&nbsp;value centers the flex-items along the axis of the flex-direction.&nbsp;Elements can also be evenly distributed across the available space using <span class="code">&nbsp;space-between </span>. The first item is placed where it would be originally&nbsp;when using flex-start. The last item is placed at the end of the axis and all other items are positioned evenly in-between.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">The <span class="code">&nbsp;space-around </span>&nbsp;value creates equal space around the elements. Since there's equal space on <span class="emphasize">both</span> sides of the flex-items, the first and last item will be closer to the container edges than the items are to each other.</p>
+      <p class="paragraph">The three examples below illustrate this using the&nbsp;<span class="code">&nbsp;row </span>&nbsp;value as flex-direction.</p>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12">
+      <h6 class="caption">Row: Center</h6>
+    </div>
+    <div class="coffee-span-12 three-elements-column coffee-offset-0 center">
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-7.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-1</h6>
+      </div>
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-8.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-2</h6>
+      </div>
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-9.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-3</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12">
+      <h6 class="caption">Row: Space-between</h6>
+    </div>
+    <div class="coffee-span-12 three-elements-column coffee-offset-0 space-between">
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-7.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-1</h6>
+      </div>
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-8.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-2</h6>
+      </div>
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-9.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-3</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12">
+      <h6 class="caption">Row: Space-around</h6>
+    </div>
+    <div class="coffee-span-12 three-elements-column coffee-offset-0 space-around">
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-7.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-1</h6>
+      </div>
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-8.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-2</h6>
+      </div>
+      <div class="container three-elements-item small">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-9.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-3</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-2 coffee-768-span-3 coffee-460-span-10 coffee-460-offset-1">
+      <p class="paragraph side-note">No more chasing heights thanks to stretching containers.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-460-span-12 coffee-460-offset-0 coffee-offset-0 coffee-768-offset-0">
+      <h6>align-items</h6>
+      <p class="paragraph">This property is used for aligning the flex-items <span class="bold">on the cross axis</span> of the defined direction. It’s very similar to justify-content but works on the perpendicular direction. Continuing with our example where we use row as flex-direction, we can influence the vertical alignment of the three containers. In order to show this we’ll have to make them different in height first.&nbsp;</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">To accomplish this for example below I used a maximum-height on the pictures in the first and last containers. Without flexbox this would make these white containers shrink as the height is usually determined by its contents. In this case, with the default value <span class="code">&nbsp;stretch </span>&nbsp;for the<span class="control">&nbsp;align-items</span>&nbsp;property, the containers will keep filling the vertical space created by the larger middle container. A really handy feature indeed, thanks flexbox!</p>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12">
+      <h6 class="caption">Align-items: stretch</h6>
+    </div>
+    <div class="coffee-span-12 three-elements-column coffee-offset-0 center align-stretch">
+      <div class="container three-elements-item small space-between">
+        <div class="responsive-picture three-elements-product small less-height">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-1</h6>
+      </div>
+      <div class="container three-elements-item small space-between">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-7.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-2</h6>
+      </div>
+      <div class="container three-elements-item small space-between">
+        <div class="responsive-picture three-elements-product small less-height">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-9.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-3</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">The second and third example show what happens when the value is changed to <span class="code">&nbsp;flex-start </span>&nbsp;and <span class="code">&nbsp;flex-end </span>&nbsp;respectively.</p>
+      <p class="paragraph">The containers stop stretching. They take the height of their contents, and position themselves in the remaining vertical space created by the larger middle container.&nbsp;</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">The flex-items can also be vertically centered using the <span class="code">&nbsp;center </span>&nbsp;value. The very first example of this guide uses the center values for both axes (<span class="control">justify-content</span> and <span class="control">align-items</span>) to create the sweet symmetrical effect on top of the background image.</p>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12">
+      <h6 class="caption">Align-items: flex-start</h6>
+    </div>
+    <div class="coffee-span-12 three-elements-column coffee-offset-0 center align-start">
+      <div class="container three-elements-item small space-between">
+        <div class="responsive-picture three-elements-product small less-height">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-6.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-1</h6>
+      </div>
+      <div class="container three-elements-item small space-between">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-1.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-2</h6>
+      </div>
+      <div class="container three-elements-item small space-between">
+        <div class="responsive-picture three-elements-product small less-height">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-8.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-3</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12">
+      <h6 class="caption">Align-items: flex-end</h6>
+    </div>
+    <div class="coffee-span-12 three-elements-column coffee-offset-0 center align-end">
+      <div class="container three-elements-item small space-between">
+        <div class="responsive-picture three-elements-product small less-height">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-6.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-1</h6>
+      </div>
+      <div class="container three-elements-item small space-between">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-1.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-2</h6>
+      </div>
+      <div class="container three-elements-item small space-between">
+        <div class="responsive-picture three-elements-product small less-height">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-8.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-3</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">The last property that can be used here is <span class="code">&nbsp;baseline </span>. This could be useful when the different flex-items would use different fonts or font-sizes. Using baseline as value, the items would be aligned according to the baseline of the font.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">Overall the align-items property&nbsp;works in a similar way to the justify-content property, only on the other axis than specified by the flex-direction.&nbsp;This means that if you change the flex-direction, the justify-content and align-items controls switch the axis they were working on. Something to take into account!</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <h6>align-content</h6>
+      <p class="paragraph">When there is more than a single line — more than a single column or row — of items, this property can be used to distribute the space <span class="emphasize">between</span> the lines. Additional lines are created when there’s not enough space for the flex-items and they are told not to shrink using the <span class="code">&nbsp;no-wrap </span>&nbsp;property.</p>
+      <p class="paragraph">Let’s create a little playground by reusing the quote section that we looked at earlier. I extended it a bit by adding two more elements and using real customer quotes for (Responsive Site Designer) that by nature have varying text lengths.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">I also removed the width constraint from the row to give the quotes more room on large monitors. The column (flex-container)now has &nbsp;a minimum height, giving us more vertical room to play with.</p>
+      <p class="paragraph">The very first thing that comes to mind when looking at that section is how <span class="paragraph-text-1">awesome Responsive Site Designer is</span> easy flexbox makes it to align elements with varying height. No matter the what display width is, the items will line up (and neatly wrap) when space is limited. There’s a little catch here though...</p>
+    </div>
+  </div>
+  <div class="row sample-vertical-align full-width">
+    <div class="coffee-span-12 quotes-column extended">
+      <blockquote class="vertical-align-quotes extended">"I would pay thousands for this software and can't believe your prices. This is Adobe-territory, only much easier to use and a fraction of the price. "</blockquote>
+      <blockquote class="vertical-align-quotes extended">"Responsive Site Designer is nothing less than a work of genius! A true revolution in website design."</blockquote>
+      <blockquote class="vertical-align-quotes extended">"Thank you for such an unbelievably, awesome program."</blockquote>
+      <blockquote class="vertical-align-quotes extended">"I think this is the best application I have used; it is simple to create some stunning sites with the minimum of technical knowledge … what a time saver"</blockquote>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-2 coffee-768-span-3 coffee-460-span-10 coffee-460-offset-1">
+      <p class="paragraph side-note">Got some insight here? <a title="" href="https://twitter.com/weldebob" class="p-link">Please hit me up on twitter</a> so we can discuss!</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-460-span-12 coffee-460-offset-0 coffee-offset-0 coffee-768-offset-0">
+      <p class="paragraph">Using <span class="highlight">both the align-items and align-content properties</span> together, creates a difference in some browsers with how the above blockquotes are displayed.. I found that Chrome uses different display rules than other browsers. The number of combinations is quite large though, and I have not (yet) stepped through all browsers meticulously.</p>
+      <p class="paragraph">However, I amsure nothing dramatic happens, the elements are aligned (slightly) differently and remain very readable and usable overall.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">In the example above I am using <span class="code">&nbsp;flex-end </span>&nbsp;for the <span class="control">align-items</span>&nbsp;control and <span class="code">&nbsp;center </span>&nbsp;for center for <span class="control">align-content</span>. This vertically centers the boxes and aligns the bottom borders in Firefox, Safari and Internet Explorer. Chrome does this differently by positionin the elements at the bottom (flex-end) of the flex-container.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-10 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <h4>Properties for (individual) flexbox-items<br>
+      </h4>
+    </div>
+    <div class="coffee-span-5 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">Up to now we have been looking at the layout variations using property controls and values for the flex-container. An additional number of display possibilities can be created by defining flexbox rules for the (direct) children in the flex-container.</p>
+      <h6>Reordering&nbsp;child-elements<br>
+      </h6>
+      <p class="paragraph">Initially the elements inside a flex-container are displayed in the order they were added. We already saw that this order can be reversed using the flex-direction property on the flex-container.<br>
+      </p>
+      <p class="paragraph">The <span class="control">order</span> property available for the flex-items gives additional control over the order in which the elements are presented. Reusing the example with the horizontally centered items, we can switch the position of the third and second flex-item.<br>
+      </p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">All we need for that is to assign order values. Using a value of <span class="code">&nbsp;1 </span>&nbsp; for the last flex-item and <span class="code">&nbsp;2 </span>&nbsp;for the middle item, will make them swap positions. All integer values are allowed here. Giving the third item a value of <span class="code">&nbsp;-1 </span>&nbsp;would make it the first placed element.<br>
+      </p>
+      <p class="paragraph">Since these items share the same clase, <span class="highlight">values for flexbox items should be assigned to a different selector</span>. A good rule of thumb is to use an additional class if the value is shared between a subset of the flex-items, and to add an ID if the value is specific to only one flex element. Order numbers are generally unique so I assigned them to separate IDs.&nbsp;</p>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12">
+      <h6 class="caption">Reorder items 2 and 3</h6>
+    </div>
+    <div class="coffee-span-12 three-elements-column coffee-offset-0 center">
+      <div class="container three-elements-item small" id="number-1">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-5.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-1</h6>
+      </div>
+      <div class="container three-elements-item small" id="number-2">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-2</h6>
+      </div>
+      <div class="container three-elements-item small" id="number-3">
+        <div class="responsive-picture three-elements-product small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-4.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-3</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-2 coffee-768-span-3 coffee-460-span-10 coffee-460-offset-1">
+      <p class="paragraph side-note">Give that &lt;picture&gt; element link a follow if you have a second. It’s offering something we all should be using more!</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-460-span-12 coffee-460-offset-0 coffee-offset-0 coffee-768-offset-0">
+      <p class="paragraph">Changing the order of items can be useful when layout changes are needed for different screens. Let’s consider a practical use case.</p>
+      <h6>Real life content reordering</h6>
+      <p class="paragraph">Product or service presentations are frequently laid out using a combination of text and images next to each other on wider screens. Then below the image-text order for the next product or feature is reversed.&nbsp;However, with less horizontal space available on small screens, many prefer to stack the items. <br>
+      </p>
+      <p class="paragraph">We are using a similar format on many of our pages for describing features of our software products. <br>
+      </p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">On the Responsive Site Designer page, for example, we talk about increasing website performance <a title="" href="http://www.coffeecup.com/designer#responsive_images">using the &lt;picture&gt; element</a>. Following that we discuss adjusting&nbsp;layouts for optimal viewing experience on any screen. It would be weird if the two text sections would follow each other on mobile devices; the separation of the two features would not be visually clear to the reader.&nbsp;</p>
+      <p class="paragraph paragraph-1">To battle that we are "pushing and pulling" the columns. This can very well be done both manually and (using the drop downs) in RSD, but requires some conceptual layout thinking. Flexbox makes this <span class="emphasize">way</span> smoother and easier</p>
+      <p class="paragraph">The design below uses a similar layout as just discussed.&nbsp;</p>
+    </div>
+  </div>
+  <div class="row product-detail-row">
+    <div class="coffee-span-12 coffee-offset-0">
+      <div class="subgrid">
+        <div class="row">
+          <div class="coffee-span-10 coffee-offset-2 product-detail-subcol coffee-1084-span-12 coffee-1084-offset-0">
+            <div class="responsive-picture product-detail">
+              <picture><img alt="flex-item-1" srcset="./images/product-1.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+              </picture>
+            </div>
+            <div class="container product-detail-container">
+              <h6 class="three-elements-title product-detail">Flex-item-1</h6>
+              <p class="paragraph product-facts">Net Wt. 6.2 Oz</p>
+              <p class="paragraph price">$ 24.00</p>
+              <p class="paragraph product-description">Simply work into a lather with warm water and massage onto wet face, rinse clean. For traditional wet shaving: With a wet shave brush or hands, work into a rich lather with warm water and apply to damp beard. Proceed to shave with preferred razor for a close, smooth, clean and moisturizing shave. The rich lathering quality of our Glycerin along with the infused Vitamin E, Safflower, Palm and Coconut oils will protect your skin and provide optimal blade glide – without any residue left behind.</p><a class="link-button buy-button" href="#">Add to cart</a>
+            </div>
+          </div>
+          <div class="coffee-span-10 coffee-offset-2 product-detail-subcol coffee-1084-span-12 coffee-1084-offset-0">
+            <div class="container product-detail-container">
+              <h6 class="three-elements-title product-detail">Flex-item-2</h6>
+              <p class="paragraph product-facts">Net Wt. 7.9 Oz</p>
+              <p class="paragraph price">$ 29.00</p>
+              <p class="paragraph product-description">Simply work into a lather with warm water and massage onto wet face, rinse clean. For traditional wet shaving: With a wet shave brush or hands, work into a rich lather with warm water and apply to damp beard. Proceed to shave with preferred razor for a close, smooth, clean and moisturizing shave. The rich lathering quality of our Glycerin along with the infused Vitamin E, Safflower, Palm and Coconut oils will protect your skin and provide optimal blade glide – without any residue left behind.</p><a class="link-button buy-button" href="#">Add to cart</a>
+            </div>
+            <div class="responsive-picture product-detail reorder-top">
+              <picture><img alt="flex-item-2" srcset="./images/product-3.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-2 coffee-768-span-3 coffee-460-span-10 coffee-460-offset-1">
+      <p class="paragraph side-note">Bye bye push &amp; pull. Hello order!</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-460-span-12 coffee-460-offset-0 coffee-offset-0 coffee-768-offset-0">
+      <p class="paragraph">According to the natural element order, the product description and add to cart button of flex-item-1 are immediately followed by the product description of flex-item-2.&nbsp;<br>
+      </p>
+      <p class="paragraph">On wide screens the layout provides a nice visual separation between the two different products. On smaller screens — on the left of the 768px breakpoint — the product image and description are stacked. This would have visually created one large block of text if the order would not have been changed.<br>
+      </p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">This would not only have been unappealing from an aesthetic perspective, it could also be potentially confusing for the reader. To change the order at the breakpoint I added a class to the second image and assigned an <span class="control">order</span> value of <span class="code">&nbsp;-1 </span>.</p>
+      <h6>Screen readers and element order<br>
+      </h6>
+      <p class="paragraph paragraph-1">Please note that screen readers will continue to follow the natural order of the elements. If we want the screen readers to follow the image+text →&nbsp;image+text order, we should add the elements in that order. Then, on wide screens, we reverse the order of the image and text container to create the same visual effect as in the current design.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0 coffee-offset-2">
+      <h6>Influencing element size with flexbox<br>
+      </h6>
+      <p class="paragraph">The ability to calculate and distribute space is one&nbsp;the greatest strengths of flexbox. The flex grow, shrink and basis properties can be used to influence how the available space in the parent (flex) container is allocated between the flex-items.<br>
+      </p>
+      <p class="paragraph">The <span class="control">flex-basis</span> CSS property specifies the initial size of a flex item. The default value is <span class="code">&nbsp;auto </span>&nbsp;which instructs the browser to use the currently calculated width or height. In our examples where each of the flex-items (the white containers) used the same width (100%), the space gets distributed equally.&nbsp;<br>
+      </p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">A specific initial size can be defined as well. The value can be set in pixels, ems or a percentage. (Please note that in RSD we currently only provide for percentages for this and several other size related controls. We do have a unit switcher on our roadmap for one of the upcoming versions though!)</p>
+      <p class="paragraph paragraph-1">In the example below I gave each of the white containers an ID and assigned individual values for the flex-basis. The middle container is instructed to use <span class="code">&nbsp;40% </span>&nbsp;of the space, whereas the other two container each get <span class="code">&nbsp;15% </span>. This means that 30% of the space is left empty….but only as long as <span class="control">flex-grow</span> is set to <span class="code">&nbsp;0 </span>!</p>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12">
+      <h6 class="caption">Flex-basis: 15%, 40%, 15%&nbsp;</h6>
+    </div>
+    <div class="coffee-span-12 three-elements-column coffee-offset-0 center">
+      <div class="container three-elements-item" id="brush">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-5.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-1</h6>
+      </div>
+      <div class="container three-elements-item" id="oil">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-2</h6>
+      </div>
+      <div class="container three-elements-item" id="razor">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-4.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-3</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0 coffee-offset-2">
+      <p class="paragraph">Please note that I changed the percentages for small screens to 20%, 30%, 20%.</p>
+      <p class="paragraph">The&nbsp;<span class="control">flex-grow</span>&nbsp;property determines what will happen with any <span class="highlight">remaining empty space</span>. When changing the flex-grow value to <span class="code">&nbsp;1 </span>&nbsp;for flex-item-1 it will take up all the space that was left. This makes the element 45% (15% + 30%) of the column width. (Minus any allocated margin or padding.)<br>
+      </p>
+      <p class="paragraph">If the flex-grow for item-3 is set to <span class="code">&nbsp;1 </span>&nbsp;as well, the leftover space is equally distributed between both items. This is illustrated in the example below.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">The flex-grow is not relative to other items. An element with flex-grow of 4 will not always be twice the size of an item with a flex-grow of 2. Increasing the flex-grow for an item just means that the amount of remaining space it receives will be increased.&nbsp;</p>
+      <p class="paragraph">Increasing, for example, the value to <span class="code">&nbsp;2 </span>&nbsp;for the first item, would give it twice as much of the leftover space as the last item. And so on.</p>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12">
+      <h6 class="caption">Basis: 15%, 40%, 15% &nbsp;Grow: 1, 0, 1&nbsp;</h6>
+    </div>
+    <div class="coffee-span-12 three-elements-column coffee-offset-0 center">
+      <div class="container three-elements-item" id="brush-copy-1">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-5.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-1</h6>
+      </div>
+      <div class="container three-elements-item" id="oil-copy-1">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-2</h6>
+      </div>
+      <div class="container three-elements-item" id="razor-copy-1">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-4.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-3</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0 coffee-offset-2">
+      <p class="paragraph">The flex-shrink property works in a similar way. It determines which of the items needs to lose most of its size to compensate for any missing space (when the items are wider than the parent container).</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">It will be clear that the flex-grow (and shrink for that matter) will be less useful in the context of a fluid percentage based layout. I can see specific design cases where it could come in handy to have a certain item grow (and shrink) automatically from an initial situation where they are all sized equally. Right now this can be done by changing the values at a breakpoint, but it’s a little less automatic.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0 coffee-offset-2">
+      <h6>Maintaining horizontal alignment</h6>
+      <p class="paragraph">We already learned that Flexbox can be used to create cards of the exact same height, even if the contents within the cards differ. Keeping&nbsp;action buttons or links horizontally aligned underneath a text section, has always been one of the other challenges when using flexible layouts.<br>
+      </p>
+      <p class="paragraph">Even with similar text lengths sentences of one section would wrap before the other sections. This then would push the items underneath down, before they would get pushed down in the other sections.&nbsp;</p>
+      <p class="paragraph">The example below shows three sections, or ‘cards’ as they are often called.&nbsp;The images are the same size, the headings are the same, as well as the paragraph styles. The only difference is the text length of each paragraph.</p>
+      <p class="paragraph">It is a rather significant difference. Yet, the action buttons are perfectly aligned with each other. This happens because of two reasons. First, the cards (containers) with less content stretch as much is needed to have the same height as the container with the most content. Secondly, <span class="highlight">the paragraphs are instructed to take up any remaining available space</span> that is created because of the stretching.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph paragraph-1">Instructing an element to take up remaining space is done through the <span class="control">flex-grow</span> property. With a value of <span class="code">&nbsp;1 </span>&nbsp;— and an implied value of zero for the other elements — the paragraph is greedy and consumes all left-over space. With a background applied to the paragraph this would have been visible.</p>
+      <p class="paragraph paragraph-1">If you are reading this guide in Responsive Site Designer, I invite you to apply that background to the paragraph and look at the effect. Another useful exercise would be to remove the <span class="code">&nbsp;flex-grow&nbsp;</span>&nbsp;class from the first (or last) paragraph. The flex-growth is tied to this selector and without it, the button will immediately move back up right under the text.</p>
+      <p class="paragraph paragraph-1">The flex-grow (and its counterpart flex-shrink)&nbsp;property might take a little to get used, but they can be very powerful allies in a document where element and layout dimensions changed based upon available display width. As we touched upon earlier, a flex-grow value of 2 for an elements means it can take up twice as much of the remaining space as elements with a value of 1. Can you imagine the possibilities?</p>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12 three-elements-column coffee-offset-0">
+      <div class="container three-elements-item">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-1.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-1</h6>
+        <p class="paragraph three-elements-paragraph flex-growth">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum.</p><a class="link-button buy-button" href="#">Add to cart</a>
+      </div>
+      <div class="container three-elements-item">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-2</h6>
+        <p class="paragraph three-elements-paragraph flex-growth">Quisque eleifend gravida libero, vitae ultricies augue blandit vel. Mauris dictum purus in dictum ultrices. Integer id odio ac erat sagittis mattis non at nunc.</p><a class="link-button buy-button" href="#">Add to cart</a>
+      </div>
+      <div class="container three-elements-item">
+        <div class="responsive-picture three-elements-product">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-3.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title">Flex-item-3</h6>
+        <p class="paragraph three-elements-paragraph flex-growth">Phasellus consequat, sapien id varius fermentum, justo erat ultricies ante, sed aliquet justo quam eget mi.</p><a class="link-button buy-button" href="#">Add to cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0 coffee-offset-2">
+      <h6>align-self<br>
+      </h6>
+      <p class="paragraph">The alignment specified by align-items on a parent level can overridden for individual flex items. In the example below the first item is displayed according to the <span class="control">align-items:</span>&nbsp;<span class="code"> flex-start </span>&nbsp;rule defined by the parent.&nbsp;</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">The second items gets an <span class="control">align-self:</span>  <span class="code">&nbsp;center </span>&nbsp;rule specified on the ID selector. The third item is told to position at the bottom of the container using flex-end.</p>
+      <p class="paragraph">The vertical space that is needed for this design example is created by giving the parent container a minimum height.</p>
+    </div>
+  </div>
+  <div class="row sample-three-elements">
+    <div class="coffee-span-12">
+      <h6 class="caption">Align individual items</h6>
+    </div>
+    <div class="coffee-span-12 coffee-offset-0 center add-height">
+      <div class="container three-elements-item">
+        <div class="responsive-picture three-elements-product small less-height">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-6.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-1</h6>
+      </div>
+      <div class="container three-elements-item" id="align-2">
+        <div class="responsive-picture three-elements-product small less-height">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-1.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-2</h6>
+      </div>
+      <div class="container three-elements-item" id="align-3">
+        <div class="responsive-picture three-elements-product less-height small">
+          <picture><img alt="Placeholder Picture" srcset="./images/product-8.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          </picture>
+        </div>
+        <h6 class="three-elements-title small">Flex-item-3</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-10 coffee-offset-2 coffee-768-span-12 coffee-768-offset-0 info-message-column">
+      <p class="paragraph info-message"><span class="highlight">Please note</span> that these items will display horizontally aligned in Internet Explorer 11 due to the height related flexbug described at the start of this guide.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="coffee-span-10 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <h4 class="heading-1">Wrapping it up<br>
+      </h4>
+    </div>
+    <div class="coffee-span-5 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">The web is not a fixed-size magazine, but a fluid medium where content needs to flow and flex to provide stellar user experiences, on any of screen size or device.&nbsp;</p>
+      <p class="paragraph">Although there’s still a lot to be learned about how flexbox can make our design work both easier and better, there’s no doubt that&nbsp;flexbox is a great extension of our toolkit.</p>
+    </div>
+    <div class="coffee-span-5 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">We are impressed and hope you are too. Flexbox is a tremendous addition to our layout design arsenal — for large monitors, small mobile screens and everything in-between.&nbsp;We hope this guide made you become a flexbox fan as well!</p>
+      <p class="paragraph">If you like what you read here you also might want to check out our <a title="" href="http://www.coffeecup.com/help/articles/1479" class="p-link">guide for designing responsive table with flexbox</a>.</p>
+    </div>
+  </div>
+  <div class="row footer">
+    <div class="coffee-span-5 coffee-offset-2 coffee-768-span-9 coffee-768-offset-3 coffee-460-span-12 coffee-460-offset-0">
+      <p class="paragraph">We hope you enjoyed it!</p>
+    </div>
+  </div>
+</body>
+
+</html>

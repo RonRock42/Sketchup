@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="generator" content="Responsive Site Designer 1.5.1390">
+  <title>Index</title>
+  <link rel="stylesheet" href="css/coffeegrinder.min.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <script>document.createElement( "picture" );</script>
+  <script src="js/picturefill.min.js" class="picturefill" async="async"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,b">
+<!-- SMOOTH SCROLL -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- End of SMOOTH SCROLL -->
+</head>
+
+<body class="grid-1">
+  <nav class="row nav-row">
+    <div class="coffee-span-12 nav-col">
+      <a class="link-text nav-item" href="#index">Home</a>
+      <a class="link-text nav-item" href="#portfolio">Portfolio</a>
+      <a class="link-text nav-item" href="#about">About</a>
+      <a class="link-text nav-item" href="#contact">Contact</a>
+    </div>
+  </nav>
+  <header class="row header" id="index">
+    <div class="coffee-span-12 logo-col">
+      <div class="responsive-picture logo">
+        <picture><img alt="Placeholder Picture" srcset="./logo.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+        </picture>
+      </div>
+    </div>
+  </header>
+  <div class="row portfolio-row" id="portfolio">
+    <div class="coffee-span-6 coffee-450-span-12 portfolio-cover"><a class="link-button portfolio-link" href="architecture.html">Architecture</a>
+    </div>
+    <div class="coffee-span-6 portfolio-cover food coffee-450-span-12"><a class="link-button portfolio-link" href="food.html">Food</a>
+    </div>
+  </div>
+  <div class="row portfolio-row">
+    <div class="coffee-span-6 portfolio-cover portraits coffee-450-span-12"><a class="link-button portfolio-link" href="portraits.html">Portraits</a>
+    </div>
+    <div class="coffee-span-6 portfolio-cover sky coffee-450-span-12"><a class="link-button portfolio-link" href="sky.html">Sky</a>
+    </div>
+  </div>
+  <div class="row portfolio-row">
+    <div class="coffee-span-6 portfolio-cover urban coffee-450-span-12"><a class="link-button portfolio-link" href="urban.html">Urban</a>
+    </div>
+    <div class="coffee-span-6 coffee-800-span-12 text-col">
+      <h2>Flux theme</h2>
+      <p class="paragraph paragraph-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed mollis neque. Nunc gravida mauris pellentesque porttitor faucibus. Duis quis quam at dolor ornare dictum at rutrum enim. Donec blandit nibh ligula, in vulputate lorem tristique ac.</p>
+    </div>
+  </div>
+  <div class="row about" id="about">
+    <div class="coffee-span-12 about-cover">
+      <a class="link-text about-email-link" href="mailto:luke@fluxphotostudio.com">{Luke</a>
+      <a class="link-text about-email-link josefine" href="mailto:josefine@fluxphotostudio.com">Josefine}</a>
+    </div>
+    <div class="coffee-span-5 coffee-800-span-9 coffee-450-span-12 coffee-offset-2 coffee-800-offset-0 text-col">
+      <h2>Luke Stavro</h2>
+      <p class="paragraph">Duis quis quam at dolor ornare dictum at rutrum enim. Donec blandit nibh ligula, in vulputate lorem tristique ac. Donec malesuada ut dolor sit amet tempor.</p>
+    </div>
+    <div class="coffee-span-5 coffee-800-span-9 coffee-800-offset-3 coffee-450-span-12 coffee-450-offset-0 text-col">
+      <h2>Josefine Peet</h2>
+      <p class="paragraph">Donec blandit nibh ligula, in vulputate lorem tristique ac. Donec malesuada ut dolor sit amet tempor. Vestibulum at faucibus arcu. Integer maximus venenatis est, imperdiet auctor lacus tristique sit amet. Donec eu cursus lorem.</p>
+    </div>
+  </div>
+  <div class="row contact" id="contact">
+    <div class="coffee-span-5 text-col contact coffee-800-span-12 coffee-offset-2">
+      <h2>Contact</h2>
+    </div>
+    <div class="coffee-span-5 text-col contact coffee-offset-0 coffee-800-span-12">
+      <span class="text-element contact-text">To</span>
+      <span class="text-element contact-text light">Flux Photo Studio</span>
+      <span class="text-element contact-text">From</span><input value="" name="email-name" type="email" class="email-field">
+      <span class="text-element contact-text">Your message</span><textarea name="textarea-name" class="textarea"></textarea><button type="submit" class="contact-bt">Send email</button>
+    </div>
+  </div>
+  <footer class="row footer">
+    <div class="coffee-span-12">
+      <p class="paragraph copyright">FLUX Photo Studio — All images provided by <a title="Unsplash - Free images" href="https://unsplash.com" class="link">Unsplash.com</a>
+      </p>
+    </div>
+  </footer>
+<script>
+if(navigator.userAgent.match(/Trident\/7\./)) {
+  document.body.addEventListener("mousewheel", function() {
+    event.preventDefault();
+    var wd = event.wheelDelta;
+    var csp = window.pageYOffset;
+    window.scrollTo(0, csp - wd);
+  });
+}
+</script>
+</body>
+
+</html>

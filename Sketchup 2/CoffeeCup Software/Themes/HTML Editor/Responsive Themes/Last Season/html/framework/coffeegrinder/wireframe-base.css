@@ -1,0 +1,67 @@
+/************************************************
+ General Default Styles
+************************************************/
+h1, h2, h3, h4, h5, h6, p, table, blockquote, ul, ol, dl, button, form, textarea { margin:7px 0; }
+table, button, label { width:100%; }
+
+/************************************************
+ Form Default Styles
+************************************************/
+input.small { padding: 2px 6px; }
+input[type="submit"],  button, .link-button {display: inline; padding:10px 0 10px 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:1em; color:rgb(70,70,70);  -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; font-size:0.875em; border: 1px solid #919191; -moz-text-shadow: 0px -1px 0 rgba(255, 255, 255, 0.3); -webkit-text-shadow: 0px -1px 0 rgba(255, 255, 255, 0.3); text-shadow: 0px -1px 0 rgba(255, 255, 255, 0.3); background-color: #c2c2c2; background-image:-o-linear-gradient(0deg, rgba(194, 194, 194, 1.00) 0%, rgba(220, 220, 220, 1.00) 100%); background-image:-moz-linear-gradient(0deg, rgba(194, 194, 194, 1.00) 0%, rgba(220, 220, 220, 1.00) 100%); background-image:-ms-linear-gradient(0deg, rgba(194, 194, 194, 1.00) 0%, rgba(220, 220, 220, 1.00) 100%); background-image:-webkit-linear-gradient(0deg, rgba(194, 194, 194, 1.00) 0%, rgba(220, 220, 220, 1.00) 100%); background-image:linear-gradient(0deg, rgba(194, 194, 194, 1.00) 0%, rgba(220, 220, 220, 1.00) 100%); }
+textarea { -webkit-border-radius: 1px; -moz-border-radius: 1px; -ms-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px;}
+
+/************************************************
+ Link Default Styles
+************************************************/
+a.link-text, a.link-button { margin:7px 0; }
+a.link-button { display:inline-block; text-align:center; }
+a.link-button { color:rgb(70,70,70); text-decoration:none;  }
+a.link-image-1-1, a.link-image-2-1, a.link-image-1-2, a.link-image-3-2, a.link-image-4-3 {margin:7px 0;}
+
+/************************************************
+ Form input elements Default Styles
+************************************************/
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="tel"], select { margin: 0px 0px 7px 0px; }
+
+/************************************************
+ Checkbox/Radio and its wrapper label Styles
+************************************************/
+label input[type="radio"], label input[type="checkbox"] {float:left; margin: 1px 4px 0 1px;}
+label.checkbox span, label.radio span {margin:0; display:inline; vertical-align: baseline;}
+
+/************************************************
+ Select Multiple Default StylesSelect 
+************************************************/
+select[multiple] {padding: 0;}
+
+/************************************************
+ Text Default StylesSelect 
+************************************************/
+span.text-element, span.glyph {margin: 7px 0;}
+
+/************************************************
+ Text Default StylesSelect 
+************************************************/
+label.label { margin:7px 0px 0px 0px;}
+
+/************************************************
+ Tables
+************************************************/
+table { max-width: 100%; border-collapse: collapse; border-spacing: 0; }
+
+.table { width: 100%; }
+.table thead.head { background: whitesmoke; }
+.table thead tr { border-bottom: 1px solid #ddd; }
+.table thead tr th { border-bottom: 1px solid #ccc; }
+.table tbody tr.even { background: #f7f7f7; }
+.table tbody tr.odd { background: white; }
+.table tbody tr:hover { background: #f2f2f2; }
+.table tbody tr td { border-bottom: 1px solid #ccc; }
+
+thead tr td, thead tr th, tbody tr td, tbody tr th, tfoot tr td, tfoot tr th { padding: 0.625em; }
+
+/************************************************
+ Images
+************************************************/
+img.image-1-1, img.image-2-1, img.image-1-2, img.image-3-2, img.image-4-3, img.square, img.skyscraper, img.leaderboard, img.rectangle, img.map, img.logo { margin:7px 0; }

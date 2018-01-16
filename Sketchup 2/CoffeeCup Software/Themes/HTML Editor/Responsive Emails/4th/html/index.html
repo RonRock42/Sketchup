@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en" style="">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style id="vendor_styles">
+        html {
+            -ms-overflow-y: auto !important;
+        }
+        
+        body {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        
+        table.radius td {
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+        }
+        
+        table.round td {
+            -webkit-border-radius: 500px;
+            -moz-border-radius: 500px;
+        }
+        
+        table.columns td.element_connector,
+        td.element_connector {
+            width: 100% !important;
+            width: calc(100%) !important;
+            width: -webkit-calc(100%) !important;
+        }
+        
+        table.container,
+        table.columns,
+        table.column,
+        table.social-box-wrapper,
+        table.social-box-text-wrapper {
+            *table-layout: auto !important;
+        }
+        
+        div,
+        p,
+        a,
+        li,
+        td {
+            -webkit-text-size-adjust: none;
+        }
+    </style>
+    <style>
+        @media screen and (max-device-width: 700px),
+        screen and (max-width: 700px) {
+            table[class="body"] center {
+                min-width: 0px !important;
+            }
+            table[class="body"] .container {
+                max-width: 700px;
+                width: 100% !important;
+            }
+            table[class="body"] .container > tbody > tr > td:not(.wrapper) {
+                min-width: 0px !important;
+            }
+            table[class="body"] .row {
+                width: 100% !important;
+                display: block !important;
+            }
+            table[class="body"] .row > tbody > tr > td:not(.wrapper) {
+                min-width: 0px !important;
+            }
+            table[class="body"] .row::after {
+                content: ' ';
+                display: table;
+                height: 0px;
+                clear: both;
+                visibility: hidden;
+            }
+            table[class="body"] table.columns[class*="small-"] {
+                display: block !important;
+            }
+            table.row > tbody > tr > td.center {
+                padding: 0px !important;
+                display: block !important;
+            }
+            table[class="body"] .wrapper {
+                display: block !important;
+                float: none !important;
+                min-width: 0px !important;
+            }
+            table.row > tbody,
+            table.row > tbody > tr {
+                display: block !important;
+                width: 100% !important;
+            }
+            table[class="body"] .columns,
+            table[class="body"] .column {
+                max-width: 700px !important;
+                table-layout: fixed !important;
+                float: left !important;
+                padding-right: 0px !important;
+                padding-left: 0px !important;
+            }
+            table[class="body"] .columns td.element_connector,
+            table[class="body"] .column td.element_connector {
+                width: 100% !important;
+                min-width: 0px !important;
+            }
+            table[class="body"] .wrapper.first .columns,
+            table[class="body"] .wrapper.first .column {
+                display: table !important;
+            }
+            table[class="body"] .twelve {
+                width: 100% !important;
+            }
+            table[class="body"] .wrapper.twelve {
+                float: left !important;
+            }
+            table[class="body"] .wrapper.twelve .columns,
+            table[class="body"] .wrapper.twelve .column {
+                width: 100% !important;
+            }
+            table[class="body"] .eleven {
+                width: 91.66666667% !important;
+            }
+            table[class="body"] .wrapper.eleven {
+                float: left !important;
+            }
+            table[class="body"] .wrapper.eleven .columns,
+            table[class="body"] .wrapper.eleven .column {
+                width: 100% !important;
+            }
+            table[class="body"] .ten {
+                width: 83.33333333% !important;
+            }
+            table[class="body"] .wrapper.ten {
+                float: left !important;
+            }
+            table[class="body"] .wrapper.ten .columns,
+            table[class="body"] .wrapper.ten .column {
+                width: 100% !important;
+            }
+            table[class="body"] .nine {
+                width: 75% !important;
+            }
+            table[class="body"] .wrapper.nine {
+                float: left !important;
+            }
+            table[class="body"] .wrapper.nine .columns,
+            table[class="body"] .wrapper.nine .column {
+                width: 100% !important;
+            }
+            table[class="body"] .eight {
+                width: 66.66666667% !important;
+            }
+            table[class="body"] .wrapper.eight {
+                float: left !important;
+            }
+            table[class="body"] .wrapper.eight .columns,
+            table[class="body"] .wrapper.eight .column {
+                width: 100% !important;
+            }
+            table[class="body"] .seven {
+                width: 58.33333333% !important;
+            }
+            table[class="body"] .wrapper.seven {
+                float: left !important;
+            }
+            table[class="body"] .wrapper.seven .columns,
+            table[class="body"] .wrapper.seven .column {
+                width: 100% !important;
+            }
+            table[class="body"] .six {
+                width: 50% !important;
+            }
+            table[class="body"] .wrapper.six {
+                float: left !important;
+            }
+            table[class="body"] .wrapper.six .columns,
+            table[class="body"] .wrapper.six .column {
+                width: 100% !important;
+            }
+            table[class="body"] .five {
+                width: 41.66666667% !important;
+            }
+            table[class="body"] .wrapper.five {
+                float: left !important;
+            }
+            table[class="body"] .wrapper.five .columns,
+            table[class="body"] .wrapper.five .column {
+                width: 100% !important;
+            }
+            table[class="body"] .four {
+                width: 33.33333333% !important;
+            }
+            table[class="body"] .wrapper.four {
+                float: left !important;
+            }
+            table[class="body"] .wrapper.four .columns,
+            table[class="body"] .wrapper.four .column {
+                width: 100% !important;
+            }
+            table[class="body"] .three {
+                width: 25% !important;
+            }
+            table[class="body"] .wrapper.three {
+                float: left !important;
+            }
+            table[class="body"] .wrapper.three .columns,
+            table[class="body"] .wrapper.three .column {
+                width: 100% !important;
+            }
+            table[class="body"] .two {
+                width: 16.66666667% !important;
+            }
+            table[class="body"] .wrapper.two {
+                float: left !important;
+            }
+            table[class="body"] .wrapper.two .columns,
+            table[class="body"] .wrapper.two .column {
+                width: 100% !important;
+            }
+            table[class="body"] .one {
+                width: 8.33333333% !important;
+            }
+            table[class="body"] .wrapper.one {
+                float: left !important;
+            }
+            table[class="body"] .wrapper.one .columns,
+            table[class="body"] .wrapper.one .column {
+                width: 100% !important;
+            }
+            table[class="body"] .columns td.twelve,
+            table[class="body"] .column td.twelve {
+                width: 100% !important;
+            }
+            table[class="body"] td.offset-by-twelve {
+                padding-left: 0px !important;
+            }
+            table[class="body"] .small-twelve {
+                width: 100% !important;
+            }
+            table[class="body"] .columns td.eleven,
+            table[class="body"] .column td.eleven {
+                width: 91.66666667% !important;
+            }
+            table[class="body"] td.offset-by-eleven {
+                padding-left: 0px !important;
+            }
+            table[class="body"] .small-eleven {
+                width: 91.66666667% !important;
+            }
+            table[class="body"] .columns td.ten,
+            table[class="body"] .column td.ten {
+                width: 83.33333333% !important;
+            }
+            table[class="body"] td.offset-by-ten {
+                padding-left: 0px !important;
+            }
+            table[class="body"] .small-ten {
+                width: 83.33333333% !important;
+            }
+            table[class="body"] .columns td.nine,
+            table[class="body"] .column td.nine {
+                width: 75% !important;
+            }
+            table[class="body"] td.offset-by-nine {
+                padding-left: 0px !important;
+            }
+            table[class="body"] .small-nine {
+                width: 75% !important;
+            }
+            table[class="body"] .columns td.eight,
+            table[class="body"] .column td.eight {
+                width: 66.66666667% !important;
+            }
+            table[class="body"] td.offset-by-eight {
+                padding-left: 0px !important;
+            }
+            table[class="body"] .small-eight {
+                width: 66.66666667% !important;
+            }
+            table[class="body"] .columns td.seven,
+            table[class="body"] .column td.seven {
+                width: 58.33333333% !important;
+            }
+            table[class="body"] td.offset-by-seven {
+                padding-left: 0px !important;
+            }
+            table[class="body"] .small-seven {
+                width: 58.33333333% !important;
+            }
+            table[class="body"] .columns td.six,
+            table[class="body"] .column td.six {
+                width: 50% !important;
+            }
+            table[class="body"] td.offset-by-six {
+                padding-left: 0px !important;
+            }
+            table[class="body"] .small-six {
+                width: 50% !important;
+            }
+            table[class="body"] .columns td.five,
+            table[class="body"] .column td.five {
+                width: 41.66666667% !important;
+            }
+            table[class="body"] td.offset-by-five {
+                padding-left: 0px !important;
+            }
+            table[class="body"] .small-five {
+                width: 41.66666667% !important;
+            }
+            table[class="body"] .columns td.four,
+            table[class="body"] .column td.four {
+                width: 33.33333333% !important;
+            }
+            table[class="body"] td.offset-by-four {
+                padding-left: 0px !important;
+            }
+            table[class="body"] .small-four {
+                width: 33.33333333% !important;
+            }
+            table[class="body"] .columns td.three,
+            table[class="body"] .column td.three {
+                width: 25% !important;
+            }
+            table[class="body"] td.offset-by-three {
+                padding-left: 0px !important;
+            }
+            table[class="body"] .small-three {
+                width: 25% !important;
+            }
+            table[class="body"] .columns td.two,
+            table[class="body"] .column td.two {
+                width: 16.66666667% !important;
+            }
+            table[class="body"] td.offset-by-two {
+                padding-left: 0px !important;
+            }
+            table[class="body"] .small-two {
+                width: 16.66666667% !important;
+            }
+            table[class="body"] .columns td.one,
+            table[class="body"] .column td.one {
+                width: 8.33333333% !important;
+            }
+            table[class="body"] td.offset-by-one {
+                padding-left: 0px !important;
+            }
+            table[class="body"] .small-one {
+                width: 8.33333333% !important;
+            }
+            table[class="body"] .right-text-pad,
+            table[class="body"] .text-pad-right {
+                padding-left: 10px !important;
+            }
+            table[class="body"] .left-text-pad,
+            table[class="body"] .text-pad-left {
+                padding-right: 10px !important;
+            }
+            table[class="body"] table.image-component > tbody > tr > td.element,
+            table[class="body"] table.image-component-right > tbody > tr > td.element,
+            table[class="body"] table.image-table > tbody > tr > td.element,
+            table[class="body"] table.link-image-table > tbody > tr > td.element {
+                width: auto;
+            }
+            table[class="body"] table td.social-image-cell {
+                width: auto;
+            }
+        }
+        
+        @media only screen and (max-width: 700px) {
+            table[class="body"] .hide-for-small,
+            table[class="body"] .show-for-desktop {
+                display: none !important;
+            }
+            table[class="body"] .show-for-small,
+            table[class="body"] .hide-for-desktop {
+                display: inherit !important;
+            }
+        }
+        
+        @media screen and (max-device-width: 700px),
+        screen and (max-width: 700px) {
+            .form_results div td {
+                display: inline-block !important;
+                width: 100% !important;
+            }
+            .cart_summary div td:nth-child(3),
+            .cart_summary div th:nth-child(3) {
+                display: none;
+            }
+            .cart_summary div tr:last-child td:first-child {
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width:700px) {
+            table[class='body'] table.heading1.main-heading > tbody > tr > td.element > * {
+                font-size: 32px !important;
+            }
+            table[class='body'] table.paragraph.top-para > tbody > tr > td.element > * {
+                font-size: 21px !important;
+            }
+            table[class='body'] table.heading2.article-heading > tbody > tr > td.margin-top {
+                padding-top: 5px !important;
+            }
+            table[class='body'] .link-text.rsvp-link > tbody > tr > td.element > * {
+                font-size: 20px !important;
+            }
+            table[class='body'] table.heading2.article-heading > tbody > tr > td.element > * {
+                font-size: 21px !important;
+            }
+        }
+        
+        @media screen and (max-width: 440px) {
+            body .row.branded-proud .paragraph p {
+                font-size: 12px !important;
+            }
+            body .row.branded-proud .link-image-table.red-logo > tbody > tr td.element img {
+                max-width: 60px !important;
+            }
+        }
+        
+        @media screen and (max-device-width: 412px),
+        screen and (max-width: 412px) {
+            table[class="body"] .small-412-twelve {
+                width: 100% !important;
+            }
+            table[class="body"] .small-412-eleven {
+                width: 91.66666667% !important;
+            }
+            table[class="body"] .small-412-ten {
+                width: 83.33333333% !important;
+            }
+            table[class="body"] .small-412-nine {
+                width: 75% !important;
+            }
+            table[class="body"] .small-412-eight {
+                width: 66.66666667% !important;
+            }
+            table[class="body"] .small-412-seven {
+                width: 58.33333333% !important;
+            }
+            table[class="body"] .small-412-six {
+                width: 50% !important;
+            }
+            table[class="body"] .small-412-five {
+                width: 41.66666667% !important;
+            }
+            table[class="body"] .small-412-four {
+                width: 33.33333333% !important;
+            }
+            table[class="body"] .small-412-three {
+                width: 25% !important;
+            }
+            table[class="body"] .small-412-two {
+                width: 16.66666667% !important;
+            }
+            table[class="body"] .small-412-one {
+                width: 8.33333333% !important;
+            }
+        }
+        
+        @media screen and (max-width:412px) {
+            table[class='body'] table.heading1.main-heading > tbody > tr > td.element > * {
+                font-size: 16px !important;
+            }
+            table[class='body'] table.paragraph.top-para > tbody > tr > td.element > * {
+                font-size: 16px !important;
+                text-align: justify !important;
+            }
+            table[class='body'] table.heading2.article-heading > tbody > tr > td.element > * {
+                font-size: 16px !important;
+                text-align: center !important;
+            }
+            table[class='body'] table.paragraph.text-para > tbody > tr > td.element > * {
+                font-size: 16px !important;
+                text-align: justify !important;
+            }
+            table[class='body'] table.heading1.main-heading > tbody > tr > td.element {
+                padding-top: 5px !important;
+            }
+            table[class='body'] table.heading1.main-heading > tbody > tr > td.margin-top {
+                padding-top: 50px !important;
+            }
+            table[class='body'] table.rule.hr-rule > tbody > tr > td.element {
+                padding-top: 0px !important;
+            }
+            table[class='body'] table.heading2.article-heading > tbody > tr > td.element {
+                text-align: center !important;
+            }
+            table[class='body'] table.paragraph.text-para > tbody > tr > td.element {
+                padding-top: 10px !important;
+                text-align: justify !important;
+            }
+            table[class='body'] table.paragraph.top-para > tbody > tr > td.element {
+                text-align: justify !important;
+                padding-right: 5px !important;
+                padding-left: 5px !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="body-bg" style="min-width:100%;margin:0px;padding:0px;width:100%;border:none;max-width:none;position:relative;mso-font-alt: Times;font-family:Georgia, Times, 'Times New Roman', serif;background-color:#121212;background-image:url(http://red-resources.coffeecup.com/storage/4th/flag.jpg);background-size:100%;background-position:50% 0%;background-repeat:no-repeat no-repeat;" bgcolor="#121212" background="http://red-resources.coffeecup.com/storage/4th/flag.jpg">
+    <table cellpadding="0" cellspacing="0" border="0" class="body" style="height:100%;width:100%;">
+        <tbody>
+            <tr>
+                <td class="center" align="center" valign="top" style="text-align:center; display:none !important;background-image:url(http://red-resources.coffeecup.com/storage/4th/flag.jpg);background-size:100%;background-position:50% 0%;background-repeat:no-repeat no-repeat;" background="http://red-resources.coffeecup.com/storage/4th/flag.jpg">
+                    <![if !mso]>
+                    <!-- -->
+                    <td class="center" align="center" valign="top" style="text-align:center;background-image:url(http://red-resources.coffeecup.com/storage/4th/flag.jpg);background-color:#121212;background-size:100%;background-position:50% 0%;background-repeat:no-repeat no-repeat;" background="http://red-resources.coffeecup.com/storage/4th/flag.jpg" bgcolor="#121212">
+                        <!--<![endif]-->
+                        <center class="grid_selector" style="width:100%;">
+                            <![if !mso]>
+                            <!-- --><img style="width:1px; height:0px; max-height:0px; display: block;" src="http://sdrive-storage.s3.amazonaws.com/red-resources/551adef18a0520/00764709/blank.png">
+                            <!--<![endif]-->
+                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="table-layout:fixed;margin:0px auto;text-align:inherit;display:table;display:none; mso-hide: none;" width="700"><![endif]-->
+                            <![if !mso]>
+                            <!-- -->
+                            <table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="max-width:700px;width:100%;table-layout:fixed;margin:0px auto;text-align:inherit;display:table;*width:700px;">
+                                <!--<![endif]-->
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <table cellpadding="0" cellspacing="0" border="0" class="row row-1" id="row-1" style="width:100%;position:relative;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width:700px;">
+                                                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="twelve columns" style="margin:0px auto;text-align:left;table-layout:fixed;display:none; mso-hide: none;" align="left" width="700"><![endif]-->
+                                                            <![if !mso]>
+                                                            <!-- -->
+                                                            <table cellpadding="0" cellspacing="0" border="0" class="twelve columns" style="margin:0px auto;text-align:left;table-layout:fixed;max-width:700px;width:100%;*width:700px;" align="left">
+                                                                <!--<![endif]-->
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                        <td class="element_connector" style="padding:0px;height:35px;width:100%;">
+                                                                            <table cellpadding="0" cellspacing="0" border="0" class="heading1 main-heading" style="width: 100%;margin-left:auto;margin-right:auto;float:none;text-align:left;" align="center">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="margin-top" style="line-height:0;font-size:0px;padding-top:50px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="margin-left" style="width:10px;display:table-cell;border-width:0;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td>
+                                                                                        <td class="element" style="text-align:center;">
+                                                                                            <h1 style="font-weight:normal;padding:0px;line-height:1.5;word-break:normal;font-size:40px;margin:0px 0px 5px;text-rendering:optimizelegibility;text-align:center;color:#dbdbdb;mso-font-alt: sans-serif;font-family:Montserrat, sans-serif;">Celebrate Independence Day</h1> </td>
+                                                                                        <td class="margin-right" style="width:10px;display:table-cell;border-width:0;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <table cellpadding="0" cellspacing="0" border="0" class="rule hr-rule" style="width: 100%;margin-left:auto;margin-right:auto;float:none;text-align:left;" align="center">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="element" style="text-align:left;padding:5px 0px;">
+                                                                                            <hr style="color:#d9d9d9;background-color:#d9d9d9;height:1px;border:none;margin:0px;background-color:#da5856;background-color:rgba(218, 88, 86, 0.498039);" bgcolor="#da5856"> </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="table-layout:fixed;margin:0px auto;text-align:inherit;display:table;display:none; mso-hide: none;" width="700"><![endif]-->
+                            <![if !mso]>
+                            <!-- -->
+                            <table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="max-width:700px;width:100%;table-layout:fixed;margin:0px auto;text-align:inherit;display:table;*width:700px;">
+                                <!--<![endif]-->
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <table cellpadding="0" cellspacing="0" border="0" class="row" style="width:100%;position:relative;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width:700px;">
+                                                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="columns twelve" style="margin:0px auto;text-align:left;table-layout:fixed;display:none; mso-hide: none;" align="left" width="700"><![endif]-->
+                                                            <![if !mso]>
+                                                            <!-- -->
+                                                            <table cellpadding="0" cellspacing="0" border="0" class="columns twelve" style="margin:0px auto;text-align:left;table-layout:fixed;max-width:700px;width:100%;*width:700px;" align="left">
+                                                                <!--<![endif]-->
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                        <td class="element_connector" style="padding:0px;height:35px;width:100%;">
+                                                                            <table cellpadding="0" cellspacing="0" border="0" class="paragraph top-para" style="width:100%;text-align:left;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="element" style="text-align:center;padding-right:25px;padding-left:25px;">
+                                                                                            <p style="font-weight:normal;padding:0px;margin:0px 0px 1.35em;color:#6b6b6b;font-size:24px;text-align:center;line-height:1.5;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;mso-font-alt: 'Bookman Old Style';font-family:'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;">You are invited to the 1st annual 4th of July bash! Everyone is welcome! Bring a dish if you want, if not we will have plenty of food to feed you!&nbsp;</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <table cellpadding="0" cellspacing="0" border="0" class="link-text rsvp-link" style="border-collapse: separate;margin-left:auto;margin-right:auto;float:none;text-align:left;" align="center">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="margin-top" style="line-height:0;font-size:0px;padding-top:10px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="element" style="text-align:left;border-collapse:separate;border-style:solid;border-color:#de3535;padding:10px 15px;"> <a href="#" style="text-decoration:none;text-align:left;line-height:1.5;font-size:26px;mso-font-alt: sans-serif;font-family:Montserrat, sans-serif;color:#ffffff;letter-spacing:2px;">RSVP NOW!</a> </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="margin-bottom" style="line-height:0;font-size:0px;padding-bottom:15px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="table-layout:fixed;margin:0px auto;text-align:inherit;display:table;display:none; mso-hide: none;" width="700"><![endif]-->
+                            <![if !mso]>
+                            <!-- -->
+                            <table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="max-width:700px;width:100%;table-layout:fixed;margin:0px auto;text-align:inherit;display:table;*width:700px;">
+                                <!--<![endif]-->
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <table cellpadding="0" cellspacing="0" border="0" class="row" style="width:100%;position:relative;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width:700px;">
+                                                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="columns twelve" style="margin:0px auto;text-align:left;table-layout:fixed;display:none; mso-hide: none;" align="left" width="700"><![endif]-->
+                                                            <![if !mso]>
+                                                            <!-- -->
+                                                            <table cellpadding="0" cellspacing="0" border="0" class="columns twelve" style="margin:0px auto;text-align:left;table-layout:fixed;max-width:700px;width:100%;*width:700px;" align="left">
+                                                                <!--<![endif]-->
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                        <td class="element_connector" style="padding:0px;height:35px;width:100%;">
+                                                                            <table cellpadding="0" cellspacing="0" border="0" class="heading2 article-heading" style="width:100%;text-align:left;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="margin-top" style="line-height:0;font-size:0px;padding-top:20px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="element" style="text-align:left;">
+                                                                                            <h2 style="font-weight:normal;padding:0px;text-align:left;line-height:1.5;word-break:normal;margin:0px 0px 10px;text-rendering:optimizelegibility;color:#2446a3;font-size:24px;mso-font-alt: sans-serif;font-family:Montserrat, sans-serif;">Celebrate the 4th with Family!</h2> </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="table-layout:fixed;margin:0px auto;text-align:inherit;display:table;display:none; mso-hide: none;" width="700"><![endif]-->
+                            <![if !mso]>
+                            <!-- -->
+                            <table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="max-width:700px;width:100%;table-layout:fixed;margin:0px auto;text-align:inherit;display:table;*width:700px;">
+                                <!--<![endif]-->
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <table cellpadding="0" cellspacing="0" border="0" class="row stacking" style="width:100%;position:relative;text-align:center;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width:700px;">
+                                                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="columns six small-412-twelve stacked" style="margin:0px auto;text-align:left;table-layout:fixed;display:inline-table;float:none;vertical-align:top;display:none; mso-hide: none;" valign="top" align="left" width="350"><![endif]-->
+                                                            <![if !mso]>
+                                                            <!-- -->
+                                                            <table cellpadding="0" cellspacing="0" border="0" class="columns six small-412-twelve stacked" style="margin:0px auto;text-align:left;table-layout:fixed;width:100%;max-width:350px;display:inline-table;float:none;vertical-align:top;*width:350px;" valign="top" align="left">
+                                                                <!--<![endif]-->
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                        <td class="element_connector" style="padding:0px;height:35px;width:100%;">
+                                                                            <table cellpadding="0" cellspacing="0" border="0" class="image-table fireworks-image" align="center" style="margin-left:auto;margin-right:auto;float:none;text-align:left;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="element" style="text-align:left;height:auto;overflow:hidden;">
+                                                                                            <!--[if gte mso 9]><img alt="Placeholder Image" src="http://sdrive-storage.s3.amazonaws.com/red-resources/551ad74a460de4/84003994/mailbox-308122_1280.jpg" style="outline: none; text-decoration: none; display: block; clear: none; margin-left: auto; margin-right: auto; float: none;display:none; mso-hide: none;" align="center" width="330"><![endif]-->
+                                                                                            <![if !mso]>
+                                                                                            <!-- --><img alt="Placeholder Image" src="http://sdrive-storage.s3.amazonaws.com/red-resources/551ad74a460de4/84003994/mailbox-308122_1280.jpg" style="outline: none; text-decoration: none; display: block; clear: none; width: 100%; height: auto; max-width: 330px; margin-left: auto; margin-right: auto; float: none;*width:330px;" align="center">
+                                                                                            <!--<![endif]-->
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <!--[if gte mso 9]></td><![endif]-->
+                                                            <!--[if gte mso 9]><td style="width:350px"><![endif]-->
+                                                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="columns six small-412-twelve stacked" style="margin:0px auto;text-align:left;table-layout:fixed;display:inline-table;float:none;vertical-align:top;display:none; mso-hide: none;" valign="top" align="left" width="350"><![endif]-->
+                                                            <![if !mso]>
+                                                            <!-- -->
+                                                            <table cellpadding="0" cellspacing="0" border="0" class="columns six small-412-twelve stacked" style="margin:0px auto;text-align:left;table-layout:fixed;width:100%;max-width:350px;display:inline-table;float:none;vertical-align:top;*width:350px;" valign="top" align="left">
+                                                                <!--<![endif]-->
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                        <td class="element_connector" style="padding:0px;height:35px;width:100%;">
+                                                                            <table cellpadding="0" cellspacing="0" border="0" class="paragraph text-para" style="width:100%;text-align:left;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="element" style="text-align:left;">
+                                                                                            <p style="font-weight:normal;padding:0px;text-align:left;margin:0px 0px 1.35em;color:#858585;mso-font-alt: 'Bookman Old Style';font-family:'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;font-size:19px;line-height:1.4;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.&nbsp;</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="table-layout:fixed;margin:0px auto;text-align:inherit;display:table;display:none; mso-hide: none;" width="700"><![endif]-->
+                            <![if !mso]>
+                            <!-- -->
+                            <table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="max-width:700px;width:100%;table-layout:fixed;margin:0px auto;text-align:inherit;display:table;*width:700px;">
+                                <!--<![endif]-->
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <table cellpadding="0" cellspacing="0" border="0" class="row" style="width:100%;position:relative;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width:700px;">
+                                                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="columns twelve" style="margin:0px auto;text-align:left;table-layout:fixed;display:none; mso-hide: none;" align="left" width="700"><![endif]-->
+                                                            <![if !mso]>
+                                                            <!-- -->
+                                                            <table cellpadding="0" cellspacing="0" border="0" class="columns twelve" style="margin:0px auto;text-align:left;table-layout:fixed;max-width:700px;width:100%;*width:700px;" align="left">
+                                                                <!--<![endif]-->
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                        <td class="element_connector" style="padding:0px;height:35px;width:100%;">
+                                                                            <table cellpadding="0" cellspacing="0" border="0" class="heading2 article-heading" style="width:100%;text-align:left;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="margin-top" style="line-height:0;font-size:0px;padding-top:20px;">&nbsp;</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="element" style="text-align:left;">
+                                                                                            <h2 style="font-weight:normal;padding:0px;text-align:left;line-height:1.5;word-break:normal;margin:0px 0px 10px;text-rendering:optimizelegibility;color:#2446a3;font-size:24px;mso-font-alt: sans-serif;font-family:Montserrat, sans-serif;">Everyone is welcome!</h2> </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="table-layout:fixed;margin:0px auto;text-align:inherit;display:table;display:none; mso-hide: none;" width="700"><![endif]-->
+                            <![if !mso]>
+                            <!-- -->
+                            <table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="max-width:700px;width:100%;table-layout:fixed;margin:0px auto;text-align:inherit;display:table;*width:700px;">
+                                <!--<![endif]-->
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <table cellpadding="0" cellspacing="0" border="0" class="row stacking" style="width:100%;position:relative;text-align:center;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width:700px;">
+                                                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="columns six small-412-twelve stacked" style="margin:0px auto;text-align:left;table-layout:fixed;display:inline-table;float:none;vertical-align:top;display:none; mso-hide: none;" valign="top" align="left" width="350"><![endif]-->
+                                                            <![if !mso]>
+                                                            <!-- -->
+                                                            <table cellpadding="0" cellspacing="0" border="0" class="columns six small-412-twelve stacked" style="margin:0px auto;text-align:left;table-layout:fixed;width:100%;max-width:350px;display:inline-table;float:none;vertical-align:top;*width:350px;" valign="top" align="left">
+                                                                <!--<![endif]-->
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                        <td class="element_connector" style="padding:0px;height:35px;width:100%;">
+                                                                            <table cellpadding="0" cellspacing="0" border="0" class="image-table flag-image" align="center" style="margin-left:auto;margin-right:auto;float:none;text-align:left;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="element" style="text-align:left;height:auto;overflow:hidden;">
+                                                                                            <!--[if gte mso 9]><img alt="Placeholder Image" src="http://sdrive-storage.s3.amazonaws.com/red-resources/551ad7d2bdbdf2/65833740/flag.jpg" style="outline: none; text-decoration: none; display: block; clear: none; margin-left: auto; margin-right: auto; float: none;display:none; mso-hide: none;" align="center" width="330"><![endif]-->
+                                                                                            <![if !mso]>
+                                                                                            <!-- --><img alt="Placeholder Image" src="http://sdrive-storage.s3.amazonaws.com/red-resources/551ad7d2bdbdf2/65833740/flag.jpg" style="outline: none; text-decoration: none; display: block; clear: none; width: 100%; height: auto; max-width: 330px; margin-left: auto; margin-right: auto; float: none;*width:330px;" align="center">
+                                                                                            <!--<![endif]-->
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <!--[if gte mso 9]></td><![endif]-->
+                                                            <!--[if gte mso 9]><td style="width:350px"><![endif]-->
+                                                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="columns six small-412-twelve stacked" style="margin:0px auto;text-align:left;table-layout:fixed;display:inline-table;float:none;vertical-align:top;display:none; mso-hide: none;" valign="top" align="left" width="350"><![endif]-->
+                                                            <![if !mso]>
+                                                            <!-- -->
+                                                            <table cellpadding="0" cellspacing="0" border="0" class="columns six small-412-twelve stacked" style="margin:0px auto;text-align:left;table-layout:fixed;width:100%;max-width:350px;display:inline-table;float:none;vertical-align:top;*width:350px;" valign="top" align="left">
+                                                                <!--<![endif]-->
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                        <td class="element_connector" style="padding:0px;height:35px;width:100%;">
+                                                                            <table cellpadding="0" cellspacing="0" border="0" class="paragraph text-para" style="width:100%;text-align:left;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="element" style="text-align:left;">
+                                                                                            <p style="font-weight:normal;padding:0px;text-align:left;margin:0px 0px 1.35em;color:#858585;mso-font-alt: 'Bookman Old Style';font-family:'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;font-size:19px;line-height:1.4;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.&nbsp;</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="table-layout:fixed;margin:0px auto;text-align:inherit;display:table;display:none; mso-hide: none;" width="700"><![endif]-->
+                            <![if !mso]>
+                            <!-- -->
+                            <table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="max-width:700px;width:100%;table-layout:fixed;margin:0px auto;text-align:inherit;display:table;*width:700px;">
+                                <!--<![endif]-->
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <table cellpadding="0" cellspacing="0" border="0" class="row" style="width:100%;position:relative;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width:700px;">
+                                                            <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="columns twelve" style="margin:0px auto;text-align:left;table-layout:fixed;display:none; mso-hide: none;" align="left" width="700"><![endif]-->
+                                                            <![if !mso]>
+                                                            <!-- -->
+                                                            <table cellpadding="0" cellspacing="0" border="0" class="columns twelve" style="margin:0px auto;text-align:left;table-layout:fixed;max-width:700px;width:100%;*width:700px;" align="left">
+                                                                <!--<![endif]-->
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                        <td class="element_connector" style="padding:0px;height:35px;width:100%;">
+                                                                            <table cellpadding="0" cellspacing="0" border="0" class="rule hr-rule" style="width: 100%;margin-left:auto;margin-right:auto;float:none;text-align:left;" align="center">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="element" style="text-align:left;padding:5px 0px;">
+                                                                                            <hr style="color:#d9d9d9;background-color:#d9d9d9;height:1px;border:none;margin:0px;background-color:#da5856;background-color:rgba(218, 88, 86, 0.498039);" bgcolor="#da5856"> </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0" class="row branded-footer branded-transparent" style="width:100%;position:relative;background-image:none;padding:0px;margin:0px;display:table;min-height:0px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;box-shadow:none;background-color:transparent;" bgcolor="#000000">
+                                <tbody>
+                                    <tr>
+                                        <td class="center" align="center" style="text-align:center;">
+                                            <center style="width:100%;">
+                                                <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="table-layout:fixed;margin:0px auto;text-align:inherit;display:table;display:none; mso-hide: none;" width="700"><![endif]-->
+                                                <![if !mso]>
+                                                <!-- -->
+                                                <table cellpadding="0" cellspacing="0" border="0" class="container container-fluid" style="max-width:700px;width:100%;table-layout:fixed;margin:0px auto;text-align:inherit;display:table;*width:700px;">
+                                                    <!--<![endif]-->
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="min-width:700px;">
+                                                                <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" class="columns twelve" style="margin:0px auto;text-align:left;table-layout:fixed;display:none; mso-hide: none;" align="left" width="700"><![endif]-->
+                                                                <![if !mso]>
+                                                                <!-- -->
+                                                                <table cellpadding="0" cellspacing="0" border="0" class="columns twelve" style="margin:0px auto;text-align:left;table-layout:fixed;max-width:700px;width:100%;*width:700px;" align="left">
+                                                                    <!--<![endif]-->
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                            <td class="element_connector" style="padding:0px;height:35px;width:100%;">
+                                                                                <table cellpadding="0" cellspacing="0" border="0" class="link-image-table red-logo" align="left" style=" text-align: left;margin-left:0px;margin-right:0px;float:left;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="element" style="text-align:left;height:auto;overflow:hidden;padding-top:15px;"><a class="link-image" href="http://www.coffeecup.com/email-designer" style="text-decoration:none;color:#5c5c5c;font-size:14px;line-height:1.5;"><!--[if gte mso 9]><img alt="Red Logo" src="http://sdrive-storage.s3.amazonaws.com/red-resources/5518c08b9e5275/08950645/powered-by.png" style="outline: none; text-decoration: none; display: block; clear: none; border: none;margin-left:0px;margin-right:0px;float:left;display:none; mso-hide: none;" align="left" width="95"><![endif]--><![if !mso]><!-- --><img alt="Red Logo" src="http://sdrive-storage.s3.amazonaws.com/red-resources/5518c08b9e5275/08950645/powered-by.png" style="outline: none; text-decoration: none; display: block; clear: none; width: 100%; height: auto; border: none;margin-left:0px;margin-right:0px;float:left;max-width:95px;*width:95px;" align="left"><!--<![endif]--></a> </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <table cellpadding="0" cellspacing="0" border="0" class="heading6 coffeecup" style="width:100%;text-align:left;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="element" style="text-align:left;padding-top:8px;padding-bottom:5px;">
+                                                                                                <h6 style="font-weight:normal;padding:0px;text-align:left;word-break:normal;margin:0px 0px 5px;mso-font-alt: Helvetica;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;text-rendering:optimizelegibility;color:#5c5c5c;font-size:14px;line-height:1.5;">Responsive Email Designer - A CoffeeCup Software production ©</h6> </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                            <td class="expander" style="padding-left:10px;width:0.000001pt;"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </center>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+                    </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

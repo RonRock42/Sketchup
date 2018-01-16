@@ -1,0 +1,43 @@
+{
+  "ftbu": {
+    "render_badges": true,
+    "journeymap_overlay": true,
+    "toggle": {
+      "day": true,
+      "night": true,
+      "gamemode": true,
+      "rain": true
+    },
+    "heal": true,
+    "server_info": true,
+    "trash_can": true,
+    "claimed_chunks": true,
+    "guide": true
+  },
+  "ftbl": {
+    "gui": {
+      "info": {
+        "border_width": 15,
+        "border_height": 15,
+        "color_background": -527142,
+        "color_text": -8690380
+      },
+      "enable_chunk_selector_depth": true
+    },
+    "action_buttons_on_top": true,
+    "my_server_settings": true,
+    "notifications": "screen",
+    "ignore_nei": false,
+    "item_ore_names": false
+  },
+  "yabba": {
+    "always_display_data": "default",
+    "bar_color": {
+      "border": -12594433,
+      "filled": -40101,
+      "free": -10750081,
+      "alpha": 85
+    },
+    "display_bar": "default"
+  }
+}

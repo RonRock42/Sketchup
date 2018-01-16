@@ -1,0 +1,246 @@
+/* Text Elements */
+
+h1.slider-heading-1 {
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  max-width: 600px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -1px;
+  font-size: 52px;
+  font-family: 'Abril Fatface', Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+}
+
+h1.slider-heading-1.mocha-heading {
+  margin-top: 50px;
+}
+
+h1.slider-heading-1.americano-heading {
+  margin-top: 50px;
+}
+
+h1.slider-heading-1.carajillo-heading {
+  margin-top: 42px;
+}
+
+.slideshow {
+  margin-top: 0;
+  padding: 0;
+  max-width: none;
+}
+
+.slides_indicator.icon-pairs {
+  position: absolute;
+  bottom: 13px;
+  width: 99%;
+  text-align: center;
+}
+
+p.slider-paragraph {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 600px;
+  color: rgba(34, 34, 34, .8);
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+  font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+}
+
+div.slider-rule {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  width: 5%;
+}
+
+div.slider-rule hr {
+  border-top-color: rgba(0, 0, 0, .8);
+  color: rgba(0, 0, 0, .8);
+}
+
+.slides_container > .slide {
+  padding: 20px 40px 40px;
+  min-height: 650px;
+  background-image: url(../images/mug-1.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.coffee-slider-previous.previous-control {
+  position: absolute;
+  top: 370px;
+  left: 20px;
+  z-index: 1;
+}
+
+.coffee-slider-next.next-control {
+  position: absolute;
+  top: 370px;
+  right: 20px;
+  z-index: 1;
+}
+
+.slides_container > .slide.carajillo {
+  margin-top: 0;
+  background-image: url(../images/mug-3.jpg);
+}
+
+a.slide_node.icon-pair {
+  padding-right: 6px;
+  padding-left: 6px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.slides_container > .slide.americano {
+  background-image: url(../images/mug-2.jpg);
+}
+
+@media screen and (max-width: 800px) {
+  /* Text Elements */
+
+  h1.slider-heading-1.americano-heading {
+    margin-top: 0;
+  }
+
+  h1.slider-heading-1.carajillo-heading {
+    margin-top: -12px;
+  }
+
+  h1.slider-heading-1.mocha-heading {
+    margin-top: 0;
+  }
+
+  .slides_container > .slide {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    min-height: 440px;
+  }
+
+  p.slider-paragraph {
+    font-size: 22px;
+  }
+
+  .coffee-slider-next.next-control {
+    top: 270px;
+  }
+
+  .coffee-slider-previous.previous-control {
+    top: 270px;
+  }
+
+  a.slide_node.icon-pair {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* Text Elements */
+
+  h1.slider-heading-1 {
+    margin-top: 18px;
+    font-size: 42px;
+  }
+
+  h1.slider-heading-1.mocha-heading {
+    margin-top: 5px;
+  }
+
+  h1.slider-heading-1.americano-heading {
+    margin-top: 16px;
+  }
+
+  h1.slider-heading-1.carajillo-heading {
+    margin-top: 25px;
+  }
+
+  p.slider-paragraph {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .slides_container > .slide {
+    padding-top: 20px;
+    min-height: 300px;
+  }
+
+  div.slider-rule {
+    display: none;
+  }
+
+  .coffee-slider-next.next-control {
+    top: 150px;
+    right: 30px;
+  }
+
+  .coffee-slider-previous.previous-control {
+    top: 150px;
+    left: 30px;
+  }
+
+  p.slider-paragraph.description {
+    display: none;
+  }
+
+  .slides_container > .slide.carajillo {
+    padding-top: 5px;
+  }
+
+  p.slider-paragraph.mocha {
+    padding-top: 35px;
+  }
+
+  p.slider-paragraph.carajillo {
+    padding-top: 50px;
+  }
+
+  .slides_container > .slide.americano {
+    padding-top: 5px;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  /* Text Elements */
+
+  h1.slider-heading-1 {
+    font-size: 30px;
+  }
+
+  h1.slider-heading-1.mocha-heading {
+    margin-top: 23px;
+  }
+
+  h1.slider-heading-1.carajillo-heading {
+    margin-top: 34px;
+  }
+
+  h1.slider-heading-1.americano-heading {
+    margin-top: 26px;
+  }
+
+  a.slide_node.icon-pair {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 12px;
+  }
+
+  .coffee-slider-next.next-control {
+    right: 10px;
+  }
+
+  .coffee-slider-previous.previous-control {
+    left: 10px;
+  }
+}.slide {
+  display: none;
+}
+.slide.active {
+  display: block;
+}

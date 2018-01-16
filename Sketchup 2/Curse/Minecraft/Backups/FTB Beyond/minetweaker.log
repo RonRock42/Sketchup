@@ -1,0 +1,403 @@
+[POSTINITIALIZATION][CLIENT][ERROR] system: JEI is already defined in that package
+[AVAILABLE][CLIENT][INFO] MineTweaker: Building registry
+[AVAILABLE][CLIENT][INFO] MineTweaker: Sucessfully built item registry
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Initializing 'beyond.zs'...
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Inscriber Silicon Press
+[AVAILABLE][CLIENT][INFO] Adding tooltip for <appliedenergistics2:material:19>: minetweaker.mc1102.formatting.FormattedMarkupString@1e06d968
+[AVAILABLE][CLIENT][INFO] Adding recipe for Inscriber Calculation Press
+[AVAILABLE][CLIENT][INFO] Adding tooltip for <appliedenergistics2:material:13>: minetweaker.mc1102.formatting.FormattedMarkupString@61cbafa7
+[AVAILABLE][CLIENT][INFO] Adding recipe for Inscriber Logic Press
+[AVAILABLE][CLIENT][INFO] Adding tooltip for <appliedenergistics2:material:15>: minetweaker.mc1102.formatting.FormattedMarkupString@70f6ee95
+[AVAILABLE][CLIENT][INFO] Adding recipe for Inscriber Engineering Press
+[AVAILABLE][CLIENT][INFO] Adding tooltip for <appliedenergistics2:material:14>: minetweaker.mc1102.formatting.FormattedMarkupString@33742e63
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding tooltip for <appliedenergistics2:sky_compass>: minetweaker.mc1102.formatting.FormattedMarkupString@366dfa51
+[AVAILABLE][CLIENT][INFO] Adding recipe for Sky Stone
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Dark Oak Bark
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Acacia Bark
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Jungle Bark
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Birch Bark
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Spruce Bark
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Oak Bark
+[AVAILABLE][CLIENT][INFO] Translating tile.immersiveengineering.ore.aluminum.name to Aluminum Ore
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding Iron Nugget to ore dictionary entry nuggetIron
+[AVAILABLE][CLIENT][INFO] Adding Copper Nugget to ore dictionary entry nuggetCopper
+[AVAILABLE][CLIENT][INFO] Adding Tin Nugget to ore dictionary entry nuggetTin
+[AVAILABLE][CLIENT][INFO] Adding Lead Nugget to ore dictionary entry nuggetLead
+[AVAILABLE][CLIENT][INFO] Adding Silver Nugget to ore dictionary entry nuggetSilver
+[AVAILABLE][CLIENT][INFO] Adding Nickel Nugget to ore dictionary entry nuggetNickel
+[AVAILABLE][CLIENT][INFO] Adding Platinum Nugget to ore dictionary entry nuggetPlatinum
+[AVAILABLE][CLIENT][INFO] Adding Emerald Nugget to ore dictionary entry nuggetEmerald
+[AVAILABLE][CLIENT][INFO] Adding Diamond Nugget to ore dictionary entry nuggetDiamond
+[AVAILABLE][CLIENT][INFO] Adding Osmium Nugget to ore dictionary entry nuggetOsmium
+[AVAILABLE][CLIENT][INFO] Adding Aluminum Nugget to ore dictionary entry nuggetAluminum
+[AVAILABLE][CLIENT][INFO] Removing Diamond Shard from ore dictionary entry nuggetDiamond
+[AVAILABLE][CLIENT][INFO] Removing Emerald Shard from ore dictionary entry nuggetEmerald
+[AVAILABLE][CLIENT][INFO] Adding This Item Is Disabled. to ore dictionary entry nuggetEnderpearl
+[AVAILABLE][CLIENT][INFO] Adding Ender Pearl Powder to ore dictionary entry dustEnder
+[AVAILABLE][CLIENT][INFO] Adding Ender Pearl Powder to ore dictionary entry dustEnderPearl
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Diamond
+[AVAILABLE][CLIENT][INFO] Adding recipe for Emerald
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Diamond Chip
+[AVAILABLE][CLIENT][INFO] Adding recipe for Diamond
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Mob Masher
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Quantum Tank
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Quantum Storage Unit
+[AVAILABLE][CLIENT][INFO] Adding recipe for Tin Plate
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Long Fall Boots
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 0 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 0 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Advanced Machine Block
+[AVAILABLE][CLIENT][INFO] Adding recipe for Advanced Machine Block
+[AVAILABLE][CLIENT][INFO] Adding recipe for Thick Neutron Reflector
+[AVAILABLE][CLIENT][INFO] Adding recipe for MT Core
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 TConstruct Smeltery - Melting Recipe(s) for <liquid:iron> * 720
+[AVAILABLE][CLIENT][INFO] Adding recipe for Black Quartz
+[AVAILABLE][CLIENT][INFO] Adding recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Ender Biotite
+[AVAILABLE][CLIENT][INFO] Adding furnace recipe for <minecraft:quartz_block>
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Removing 3 recipes
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Tin Gear
+[AVAILABLE][CLIENT][INFO] Adding recipe for Copper Gear
+[AVAILABLE][CLIENT][INFO] Adding recipe for Bronze Gear
+[AVAILABLE][CLIENT][INFO] Adding recipe for Iron Gear
+[AVAILABLE][CLIENT][INFO] Removing Implosion Compressor recipe for Iridium Plate
+[AVAILABLE][CLIENT][INFO] Removing Implosion Compressor recipe for Iridium Alloy Ingot
+[AVAILABLE][CLIENT][INFO] Adding Implosion Compressor recipe for Iridium Reinforced Plate
+[AVAILABLE][CLIENT][INFO] Adding recipe for Data Control Circuit
+[AVAILABLE][CLIENT][INFO] Adding recipe for Iridium Alloy Ingot
+[AVAILABLE][CLIENT][INFO] Adding recipe for Data Control Circuit
+[AVAILABLE][CLIENT][INFO] Adding recipe for Neutron Reflector
+[AVAILABLE][CLIENT][INFO] Adding recipe for Neutron Reflector
+[AVAILABLE][CLIENT][INFO] Initialized 'beyond.zs'
+[AVAILABLE][CLIENT][INFO] Removing recipe for Neutron Reflector
+[AVAILABLE][CLIENT][INFO] Removing recipe for Neutron Reflector
+[AVAILABLE][CLIENT][INFO] Removing recipe for Data Control Circuit
+[AVAILABLE][CLIENT][INFO] Removing recipe for Iridium Alloy Ingot
+[AVAILABLE][CLIENT][INFO] Removing recipe for Data Control Circuit
+[AVAILABLE][CLIENT][INFO] Removing Implosion Compressor recipe for Iridium Reinforced Plate
+[AVAILABLE][CLIENT][INFO] Re-Adding Implosion Compressor recipe for Iridium Alloy Ingot
+[AVAILABLE][CLIENT][INFO] Re-Adding Implosion Compressor recipe for Iridium Plate
+[AVAILABLE][CLIENT][INFO] Removing recipe for Iron Gear
+[AVAILABLE][CLIENT][INFO] Removing recipe for Bronze Gear
+[AVAILABLE][CLIENT][INFO] Removing recipe for Copper Gear
+[AVAILABLE][CLIENT][INFO] Removing recipe for Tin Gear
+[AVAILABLE][CLIENT][INFO] Restoring 2 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 3 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 2 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 2 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing furnace recipe for <minecraft:quartz_block>
+[AVAILABLE][CLIENT][INFO] Removing recipe for Ender Biotite
+[AVAILABLE][CLIENT][INFO] Removing recipe for Chest
+[AVAILABLE][CLIENT][INFO] Removing recipe for Chest
+[AVAILABLE][CLIENT][INFO] Removing recipe for Chest
+[AVAILABLE][CLIENT][INFO] Removing recipe for Chest
+[AVAILABLE][CLIENT][INFO] Removing recipe for Chest
+[AVAILABLE][CLIENT][INFO] Removing recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Removing recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Removing recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Removing recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Removing recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Removing recipe for Black Quartz
+[AVAILABLE][CLIENT][INFO] Restoring 1 TConstruct Smeltery - Melting Recipe(s) for <liquid:iron> * 720
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for MT Core
+[AVAILABLE][CLIENT][INFO] Removing recipe for Thick Neutron Reflector
+[AVAILABLE][CLIENT][INFO] Removing recipe for Advanced Machine Block
+[AVAILABLE][CLIENT][INFO] Removing recipe for Advanced Machine Block
+[AVAILABLE][CLIENT][INFO] Restoring 2 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 0 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 0 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Long Fall Boots
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Tin Plate
+[AVAILABLE][CLIENT][INFO] Removing recipe for Quantum Storage Unit
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Quantum Tank
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Mob Masher
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Restoring 2 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Restoring 2 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Restoring 2 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Restoring 2 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Restoring 2 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Restoring 2 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Diamond
+[AVAILABLE][CLIENT][INFO] Removing recipe for Diamond Chip
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Emerald
+[AVAILABLE][CLIENT][INFO] Removing recipe for Diamond
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing Ender Pearl Powder from ore dictionary entry dustEnderPearl
+[AVAILABLE][CLIENT][INFO] Removing Ender Pearl Powder from ore dictionary entry dustEnder
+[AVAILABLE][CLIENT][INFO] Removing This Item Is Disabled. from ore dictionary entry nuggetEnderpearl
+[AVAILABLE][CLIENT][INFO] Restoring Emerald Shard to ore dictionary entry nuggetEmerald
+[AVAILABLE][CLIENT][INFO] Restoring Diamond Shard to ore dictionary entry nuggetDiamond
+[AVAILABLE][CLIENT][INFO] Removing Aluminum Nugget from ore dictionary entry nuggetAluminum
+[AVAILABLE][CLIENT][INFO] Removing Osmium Nugget from ore dictionary entry nuggetOsmium
+[AVAILABLE][CLIENT][INFO] Removing Diamond Nugget from ore dictionary entry nuggetDiamond
+[AVAILABLE][CLIENT][INFO] Removing Emerald Nugget from ore dictionary entry nuggetEmerald
+[AVAILABLE][CLIENT][INFO] Removing Platinum Nugget from ore dictionary entry nuggetPlatinum
+[AVAILABLE][CLIENT][INFO] Removing Nickel Nugget from ore dictionary entry nuggetNickel
+[AVAILABLE][CLIENT][INFO] Removing Silver Nugget from ore dictionary entry nuggetSilver
+[AVAILABLE][CLIENT][INFO] Removing Lead Nugget from ore dictionary entry nuggetLead
+[AVAILABLE][CLIENT][INFO] Removing Tin Nugget from ore dictionary entry nuggetTin
+[AVAILABLE][CLIENT][INFO] Removing Copper Nugget from ore dictionary entry nuggetCopper
+[AVAILABLE][CLIENT][INFO] Removing Iron Nugget from ore dictionary entry nuggetIron
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Reverting tile.immersiveengineering.ore.aluminum.name to Bauxite Ore
+[AVAILABLE][CLIENT][INFO] Removing recipe for Oak Bark
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Spruce Bark
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Birch Bark
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Jungle Bark
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Acacia Bark
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Dark Oak Bark
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing recipe for Sky Stone
+[AVAILABLE][CLIENT][INFO] Removing tooltip for <appliedenergistics2:sky_compass>: minetweaker.mc1102.formatting.FormattedMarkupString@366dfa51
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing tooltip for <appliedenergistics2:material:14>: minetweaker.mc1102.formatting.FormattedMarkupString@33742e63
+[AVAILABLE][CLIENT][INFO] Removing recipe for Inscriber Engineering Press
+[AVAILABLE][CLIENT][INFO] Removing tooltip for <appliedenergistics2:material:15>: minetweaker.mc1102.formatting.FormattedMarkupString@70f6ee95
+[AVAILABLE][CLIENT][INFO] Removing recipe for Inscriber Logic Press
+[AVAILABLE][CLIENT][INFO] Removing tooltip for <appliedenergistics2:material:13>: minetweaker.mc1102.formatting.FormattedMarkupString@61cbafa7
+[AVAILABLE][CLIENT][INFO] Removing recipe for Inscriber Calculation Press
+[AVAILABLE][CLIENT][INFO] Removing tooltip for <appliedenergistics2:material:19>: minetweaker.mc1102.formatting.FormattedMarkupString@1e06d968
+[AVAILABLE][CLIENT][INFO] Removing recipe for Inscriber Silicon Press
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 2 recipes
+[AVAILABLE][CLIENT][INFO] Restoring 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Initializing 'beyond.zs'...
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Inscriber Silicon Press
+[AVAILABLE][CLIENT][INFO] Adding tooltip for <appliedenergistics2:material:19>: minetweaker.mc1102.formatting.FormattedMarkupString@1c3bb6a8
+[AVAILABLE][CLIENT][INFO] Adding recipe for Inscriber Calculation Press
+[AVAILABLE][CLIENT][INFO] Adding tooltip for <appliedenergistics2:material:13>: minetweaker.mc1102.formatting.FormattedMarkupString@48f9cd69
+[AVAILABLE][CLIENT][INFO] Adding recipe for Inscriber Logic Press
+[AVAILABLE][CLIENT][INFO] Adding tooltip for <appliedenergistics2:material:15>: minetweaker.mc1102.formatting.FormattedMarkupString@4b3c043a
+[AVAILABLE][CLIENT][INFO] Adding recipe for Inscriber Engineering Press
+[AVAILABLE][CLIENT][INFO] Adding tooltip for <appliedenergistics2:material:14>: minetweaker.mc1102.formatting.FormattedMarkupString@73bcf128
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding tooltip for <appliedenergistics2:sky_compass>: minetweaker.mc1102.formatting.FormattedMarkupString@37b17a36
+[AVAILABLE][CLIENT][INFO] Adding recipe for Sky Stone
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Dark Oak Bark
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Acacia Bark
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Jungle Bark
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Birch Bark
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Spruce Bark
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Oak Bark
+[AVAILABLE][CLIENT][INFO] Translating tile.immersiveengineering.ore.aluminum.name to Aluminum Ore
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding Iron Nugget to ore dictionary entry nuggetIron
+[AVAILABLE][CLIENT][INFO] Adding Copper Nugget to ore dictionary entry nuggetCopper
+[AVAILABLE][CLIENT][INFO] Adding Tin Nugget to ore dictionary entry nuggetTin
+[AVAILABLE][CLIENT][INFO] Adding Lead Nugget to ore dictionary entry nuggetLead
+[AVAILABLE][CLIENT][INFO] Adding Silver Nugget to ore dictionary entry nuggetSilver
+[AVAILABLE][CLIENT][INFO] Adding Nickel Nugget to ore dictionary entry nuggetNickel
+[AVAILABLE][CLIENT][INFO] Adding Platinum Nugget to ore dictionary entry nuggetPlatinum
+[AVAILABLE][CLIENT][INFO] Adding Emerald Nugget to ore dictionary entry nuggetEmerald
+[AVAILABLE][CLIENT][INFO] Adding Diamond Nugget to ore dictionary entry nuggetDiamond
+[AVAILABLE][CLIENT][INFO] Adding Osmium Nugget to ore dictionary entry nuggetOsmium
+[AVAILABLE][CLIENT][INFO] Adding Aluminum Nugget to ore dictionary entry nuggetAluminum
+[AVAILABLE][CLIENT][INFO] Removing Diamond Shard from ore dictionary entry nuggetDiamond
+[AVAILABLE][CLIENT][INFO] Removing Emerald Shard from ore dictionary entry nuggetEmerald
+[AVAILABLE][CLIENT][INFO] Adding This Item Is Disabled. to ore dictionary entry nuggetEnderpearl
+[AVAILABLE][CLIENT][INFO] Adding Ender Pearl Powder to ore dictionary entry dustEnder
+[AVAILABLE][CLIENT][INFO] Adding Ender Pearl Powder to ore dictionary entry dustEnderPearl
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Diamond
+[AVAILABLE][CLIENT][INFO] Adding recipe for Emerald
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Diamond Chip
+[AVAILABLE][CLIENT][INFO] Adding recipe for Diamond
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Angel Ring
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Mob Masher
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Quantum Tank
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Quantum Storage Unit
+[AVAILABLE][CLIENT][INFO] Adding recipe for Tin Plate
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Long Fall Boots
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 0 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 0 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Advanced Machine Block
+[AVAILABLE][CLIENT][INFO] Adding recipe for Advanced Machine Block
+[AVAILABLE][CLIENT][INFO] Adding recipe for Thick Neutron Reflector
+[AVAILABLE][CLIENT][INFO] Adding recipe for MT Core
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 TConstruct Smeltery - Melting Recipe(s) for <liquid:iron> * 720
+[AVAILABLE][CLIENT][INFO] Adding recipe for Black Quartz
+[AVAILABLE][CLIENT][INFO] Adding recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Trapped Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Chest
+[AVAILABLE][CLIENT][INFO] Adding recipe for Ender Biotite
+[AVAILABLE][CLIENT][INFO] Adding furnace recipe for <minecraft:quartz_block>
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 1 recipes
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Removing 3 recipes
+[AVAILABLE][CLIENT][INFO] Removing 2 recipes
+[AVAILABLE][CLIENT][INFO] Adding recipe for Tin Gear
+[AVAILABLE][CLIENT][INFO] Adding recipe for Copper Gear
+[AVAILABLE][CLIENT][INFO] Adding recipe for Bronze Gear
+[AVAILABLE][CLIENT][INFO] Adding recipe for Iron Gear
+[AVAILABLE][CLIENT][INFO] Removing Implosion Compressor recipe for Iridium Plate
+[AVAILABLE][CLIENT][INFO] Removing Implosion Compressor recipe for Iridium Alloy Ingot
+[AVAILABLE][CLIENT][INFO] Adding Implosion Compressor recipe for Iridium Reinforced Plate
+[AVAILABLE][CLIENT][INFO] Adding recipe for Data Control Circuit
+[AVAILABLE][CLIENT][INFO] Adding recipe for Iridium Alloy Ingot
+[AVAILABLE][CLIENT][INFO] Adding recipe for Data Control Circuit
+[AVAILABLE][CLIENT][INFO] Adding recipe for Neutron Reflector
+[AVAILABLE][CLIENT][INFO] Adding recipe for Neutron Reflector
+[AVAILABLE][CLIENT][INFO] Initialized 'beyond.zs'
